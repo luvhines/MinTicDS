@@ -1,6 +1,6 @@
 # MinTicDS
 
-<h1>Hola, Soy Luis</h1>
+<h1>Hola, README</h1>
 <ul>
-<li type="circle">Me gusta la <b>programación</b>, domino varios lenguajes y metodologías para la solución de problemas algorítmicos</li>
+<li type="circle">Archivo para pendientes, dudas, fechas</li>
 </ul>
