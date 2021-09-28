@@ -9,3 +9,9 @@
 <li type="circle">Sofía Gomez</li>
 <li type="circle">Juan Villegas</li>
 </ul>
+<h1>Hola, README</h1>
+<ul>
+<li type="circle">DIAGRAMA CONCEPTUAL</li>
+<a href="https://app.diagrams.net/#G15B4PlnybmoOVrBvp5C9CSwC2yWhgjRgU"</a>
+</ul>
+
