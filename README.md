@@ -11,5 +11,5 @@
 </ul>
 <h1>Enlace al diagrama</h1>
 <ul>
-<li>Diagrama aquí: https://app.diagrams.net/#G15B4PlnybmoOVrBvp5C9CSwC2yWhgjRgU</li>
+<li>Diagrama aquí: https://drive.google.com/file/d/15B4PlnybmoOVrBvp5C9CSwC2yWhgjRgU/view?usp=sharing</li>
 </ul>
