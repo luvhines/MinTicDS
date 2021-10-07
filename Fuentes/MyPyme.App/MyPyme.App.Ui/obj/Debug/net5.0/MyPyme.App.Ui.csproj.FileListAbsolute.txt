@@ -52,3 +52,7 @@
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.pdb
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.genruntimeconfig.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.csproj.CopyComplete
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Pages/PaginaTEST.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/PaginaTEST.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/index.razor.rz.scp.css
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/PaginaTEST.razor.rz.scp.css

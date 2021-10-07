@@ -1,0 +1,15 @@
+/* Archivo de estilos de la pagina PaginaTEST */
+
+#parrafo{
+    color: blue;
+    margin-left: 20px;
+}
+
+.lista{
+    color:  rgb(105, 72, 255);
+    margin-left: 50px;
+}
+
+.btn{
+    margin-top: 20px;
+}
