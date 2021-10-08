@@ -12,39 +12,6 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": 390152066,
-        "Kind": "Components.Component",
-        "Name": "MyPyme.App.Ui.Pages.Index",
-        "AssemblyName": "MyPyme.App.Ui",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "MyPyme.App.Ui.Pages.Index"
-        }
-      },
-      {
-        "HashCode": 967343976,
-        "Kind": "Components.Component",
-        "Name": "MyPyme.App.Ui.Pages.Index",
-        "AssemblyName": "MyPyme.App.Ui",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "MyPyme.App.Ui.Pages.Index"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "MyPyme.App.Ui.Pages.Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": 1034434295,
         "Kind": "Components.Component",
         "Name": "MyPyme.App.Ui.Pages.PaginaTEST",
@@ -74,6 +41,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "MyPyme.App.Ui.Pages.PaginaTEST",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 390152066,
+        "Kind": "Components.Component",
+        "Name": "MyPyme.App.Ui.Pages.Index",
+        "AssemblyName": "MyPyme.App.Ui",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MyPyme.App.Ui.Pages.Index"
+        }
+      },
+      {
+        "HashCode": 967343976,
+        "Kind": "Components.Component",
+        "Name": "MyPyme.App.Ui.Pages.Index",
+        "AssemblyName": "MyPyme.App.Ui",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "MyPyme.App.Ui.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "MyPyme.App.Ui.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

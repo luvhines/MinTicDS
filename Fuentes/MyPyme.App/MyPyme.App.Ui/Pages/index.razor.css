@@ -1,5 +1,6 @@
 .contenido{
-    display: inline;
+    display: block;
+    height: 100%;
 }
 
 .tabla{
@@ -9,11 +10,9 @@
 }
 
 td{
-    position: relative;
     height: 40%;
     width: 33.3%;  
 }
-
 
 #icon_2{
     background-image: url("iconos/icon_2.png");
@@ -36,8 +35,6 @@ td{
 
 .btnNav{
     outline: none;
-    padding: 0;
-    margin: 0;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
     width: 55%;
@@ -63,8 +60,7 @@ td{
 #etiqueta_btn{
     padding: 0;
     margin: 0;
-    height: 2%;
-    text-align: center;
+    height: 2%; 
     color: rgb(134, 112, 255);
     font-size: 120%; 
 }
