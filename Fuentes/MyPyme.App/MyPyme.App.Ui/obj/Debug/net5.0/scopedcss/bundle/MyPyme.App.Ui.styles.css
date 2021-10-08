@@ -1,6 +1,7 @@
 /* _content/MyPyme.App.Ui/Pages/index.razor.rz.scp.css */
 .contenido[b-kvso3n0ass]{
-    display: inline;
+    display: block;
+    height: 100%;
 }
 
 .tabla[b-kvso3n0ass]{
@@ -10,11 +11,9 @@
 }
 
 td[b-kvso3n0ass]{
-    position: relative;
     height: 40%;
     width: 33.3%;  
 }
-
 
 #icon_2[b-kvso3n0ass]{
     background-image: url("iconos/icon_2.png");
@@ -37,8 +36,6 @@ td[b-kvso3n0ass]{
 
 .btnNav[b-kvso3n0ass]{
     outline: none;
-    padding: 0;
-    margin: 0;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
     width: 55%;
@@ -64,8 +61,7 @@ td[b-kvso3n0ass]{
 #etiqueta_btn[b-kvso3n0ass]{
     padding: 0;
     margin: 0;
-    height: 2%;
-    text-align: center;
+    height: 2%; 
     color: rgb(134, 112, 255);
     font-size: 120%; 
 }
