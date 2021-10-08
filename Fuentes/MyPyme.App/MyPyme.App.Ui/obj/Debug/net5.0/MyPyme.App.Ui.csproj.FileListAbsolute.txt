@@ -19,10 +19,8 @@
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorComponent.input.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Shared/SurveyPrompt.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Shared/NavMenu.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorComponent.output.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/MyPyme.App.Ui.dll
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.TagHelpers.input.cache
@@ -30,18 +28,14 @@
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorCoreGenerate.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/App.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/Index.razor.g.cs
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Shared/SurveyPrompt.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/_Imports.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Shared/MainLayout.razor.g.cs
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Shared/NavMenu.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/Error.cshtml.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/_Host.cshtml.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorAssemblyInfo.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorAssemblyInfo.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/staticwebassets/MyPyme.App.Ui.StaticWebAssets.Manifest.cache
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/staticwebassets/MyPyme.App.Ui.StaticWebAssets.xml
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
-/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/bundle/MyPyme.App.Ui.styles.css
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/projectbundle/MyPyme.App.Ui.bundle.scp.css
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/MyPyme.App.Ui.RazorTargetAssemblyInfo.cache
@@ -56,3 +50,4 @@
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/PaginaTEST.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/index.razor.rz.scp.css
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/PaginaTEST.razor.rz.scp.css
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Shared/MainLayout.razor.rz.scp.css

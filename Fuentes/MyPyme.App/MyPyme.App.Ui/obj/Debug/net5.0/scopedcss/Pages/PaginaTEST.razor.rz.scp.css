@@ -1,14 +1,27 @@
-/* Archivo de estilos de la pagina PaginaTEST */
+#contenedor_lista[b-ca6yzdbuvw] {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-ca6yzdbuvw] {
+	height: auto;
+}
+.texto[b-ca6yzdbuvw] {
+	padding:4px;
+	background:#fff;
+}
 
-#parrafo[b-ca6yzdbuvw]{
+/* #parrafo{
     color: blue;
     margin-left: 20px;
 }
 
-.lista[b-ca6yzdbuvw]{
+.lista{
     color:  rgb(105, 72, 255);
     margin-left: 50px;
-}
+} */
 
 .btn[b-ca6yzdbuvw]{
     margin-top: 20px;

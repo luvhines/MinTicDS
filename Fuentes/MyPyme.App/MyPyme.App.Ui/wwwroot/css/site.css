@@ -1,8 +1,4 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
-*{
-    margin: 0;
-	padding: 0; 
-}
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
@@ -13,19 +9,10 @@ a, .btn-link {
 }
  
 .btn-primary {
-    color: #fff;
+    color: #fff; 
     background-color: #1b6ec2;
     border-color: #1861ac;
 }
-
-.content {
-    /* background-color: #26b050; */
-    padding-top: 1rem; 
-    padding-bottom: 1.7rem;  
-    height: 68%; 
-    justify-content: center;
-}
- 
 
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;

@@ -1,8 +1,19 @@
 ﻿@page "/paginatest"
 
-<h3>PÁGINA DE EJEMPLO</h3>
 
-<p id="parrafo">Esto es un texto</p>
+<h3>PÁGINA DE EJEMPLO</h3>
+<div id="contenedor_lista">
+    <div id="contenedor_lista-lista">
+        <ul class="list-group list-group-flush">
+            @for (var i = 0; i < 50; i++)
+            {
+                <li class="list-group-item">Esto es un elemento @i</li>
+            }
+        </ul>
+    </div>
+</div> 
+
+@* <p id="parrafo">Esto es un texto</p>
 
 <ul class="lista">
     <li>Esto es una lista</li>
@@ -10,19 +21,12 @@
     <li>Elemento 2</li>
     <li>Elemento 3</li>
 </ul>
-
-
-@* Esta lista tiene contenido de boostrap *@
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">Esto es un elemento</li>
-    <li class="list-group-item">Esto es un elemento</li>
-    <li class="list-group-item">Esto es un elemento</li>
-</ul>
+*@
 
 @* Este boton tiene etiquetas de booostrap *@
 <a href="/">
     <button type="button" class="btn btn-lg btn-primary">Touchme</button>
-</a>
+</a> 
 
 @code {
     @* aqui se escribe codigo c# *@

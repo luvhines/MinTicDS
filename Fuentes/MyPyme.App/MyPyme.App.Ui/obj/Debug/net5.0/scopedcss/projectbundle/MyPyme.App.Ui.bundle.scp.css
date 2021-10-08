@@ -1,9 +1,11 @@
 @import '';
 
 /* _content/MyPyme.App.Ui/Pages/index.razor.rz.scp.css */
+.contenido[b-kvso3n0ass]{
+    display: inline;
+}
 
 .tabla[b-kvso3n0ass]{
-    position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -13,8 +15,6 @@ td[b-kvso3n0ass]{
     position: relative;
     height: 40%;
     width: 33.3%;  
-    padding: 1.5%;
-    /* padding: 20px; */
 }
 
 
@@ -43,8 +43,8 @@ td[b-kvso3n0ass]{
     margin: 0;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
-    width: 60%;
-    height: 100%;
+    width: 55%;
+    height: 75%;
     border-radius: 90px;
     background-repeat: no-repeat;
     background-size:40%;
@@ -54,8 +54,8 @@ td[b-kvso3n0ass]{
 .btnNav:hover[b-kvso3n0ass]{
     transition-duration: 0.2s;
     background-color: rgb(134, 112, 255);
-    width: 64%;
-    height: 105%;
+    width: 60%;
+    height: 80%;
 }
 .btnNav:active[b-kvso3n0ass]{
     transition-duration: 0.3s;
@@ -63,7 +63,7 @@ td[b-kvso3n0ass]{
     border-color: rgb(232, 230, 240);
 }
 
-#etiqueta[b-kvso3n0ass]{
+#etiqueta_btn[b-kvso3n0ass]{
     padding: 0;
     margin: 0;
     height: 2%;
@@ -74,190 +74,125 @@ td[b-kvso3n0ass]{
 
 
 /* _content/MyPyme.App.Ui/Pages/PaginaTEST.razor.rz.scp.css */
-/* Archivo de estilos de la pagina PaginaTEST */
+#contenedor_lista[b-ca6yzdbuvw] {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-ca6yzdbuvw] {
+	height: auto;
+}
+.texto[b-ca6yzdbuvw] {
+	padding:4px;
+	background:#fff;
+}
 
-#parrafo[b-ca6yzdbuvw]{
+/* #parrafo{
     color: blue;
     margin-left: 20px;
 }
 
-.lista[b-ca6yzdbuvw]{
+.lista{
     color:  rgb(105, 72, 255);
     margin-left: 50px;
-}
+} */
 
 .btn[b-ca6yzdbuvw]{
     margin-top: 20px;
 }
 /* _content/MyPyme.App.Ui/Shared/MainLayout.razor.rz.scp.css */
+*[b-l4h2y166dl]{
+    margin: 0%;
+    padding:0%;
+}
 .page[b-l4h2y166dl] {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.sidebar[b-l4h2y166dl] {
-    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+.cuerpo[b-l4h2y166dl] {
+    padding-top: 1%; 
+    padding-bottom: 1%;  
+    padding-left: 2%;
+    padding-right: 2%;
+
+    height: 68%; 
+    justify-content: center;
 }
 
-.top-row[b-l4h2y166dl] {
-    /* background-color: #e9e9df; */
+.cabecera[b-l4h2y166dl] {
     background-image: linear-gradient(180deg, #ffffff 0%, #c9c5da 70%);
     border-bottom: 2px solid #d6d5d5;
     height: 14%;
-    display: flex;
-    /* align-items:center; */
+    display: flex;   
+    align-items: center;
     border-radius: 20px;
-    margin: 0px 5px 0px 5px;
 }
 
-.bot[b-l4h2y166dl]{
-    /* background-color: #f7f7f7; */
+.pie[b-l4h2y166dl]{
     background-image: linear-gradient(180deg, #c9c5da 0%, #ffffff 70%);
     border-top: 2px solid #d6d5d5;
     height: 14%;
     display: flex;
-    /* align-items: center; */
     border-radius: 50%;
-    margin: 0px 5px 0px 5px;
 }
 
 ul[b-l4h2y166dl]{
-    margin: 0%;
-    padding: 0%;
     list-style: none;
     width: 100%;
     display: flex;
     align-items: center;
 } 
 
-li[b-l4h2y166dl]{
-  float: left;
-  text-align: center;
-  width: 33.3%;
-}
-#li-1[b-l4h2y166dl]{
-    text-align: left;
+#cabecera_div-1[b-l4h2y166dl]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
 }
 
-#li-2[b-l4h2y166dl]{
-    text-align: right;
+#cabecera_div-2[b-l4h2y166dl]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-item[b-l4h2y166dl]{
-    position:relative;
-    float: left;
-    text-align: center;
+#cabecera_div-3[b-l4h2y166dl]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
 }
 
-
-    /* .top-row ::deep a, .top-row .btn-link {
-        white-space: nowrap;
-        margin-left: 1.5rem;
-    }
-
-    .top-row a:first-child {
-        overflow: hidden;
-        text-overflow: ellipsis;
-    }
-
-@media (max-width: 640.98px) {
-    .top-row:not(.auth) {
-        display: none;
-    }
-
-    .top-row.auth {
-        justify-content: space-between;
-    }
-
-    .top-row a, .top-row .btn-link {
-        margin-left: 0 ;
-    }
+#pie_div_1[b-l4h2y166dl]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (min-width: 641px) {
-    .page {
-        flex-direction: row;
-    }
-
-    .sidebar {
-        width: 250px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-    }
-
-    .top-row {
-        position: sticky;
-        top: 0;
-        z-index: 1;
-    }
-
-    .main > div {
-        padding-left: 2rem !important;
-        padding-right: 1.5rem !important;
-    }
-} */
-/* _content/MyPyme.App.Ui/Shared/NavMenu.razor.rz.scp.css */
-/* .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.1);
+#pie_div_2[b-l4h2y166dl]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.top-row {
-    height: 3.5rem;
-    background-color: rgba(0,0,0,0.4);
+#pie_div_3[b-l4h2y166dl]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.navbar-brand {
-    font-size: 1.1rem;
-}
-
-.oi {
-    width: 2rem;
-    font-size: 1.1rem;
-    vertical-align: text-top;
-    top: -2px;
-}
-
-.nav-item {
-    font-size: 0.9rem;
-    padding-bottom: 0.5rem;
-}
-
-    .nav-item:first-of-type {
-        padding-top: 1rem;
-    }
-
-    .nav-item:last-of-type {
-        padding-bottom: 1rem;
-    }
-
-    .nav-item ::deep a {
-        color: #d7d7d7;
-        border-radius: 4px;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        line-height: 3rem;
-    }
-
-.nav-item ::deep a.active {
-    background-color: rgba(255,255,255,0.25);
-    color: white;
-}
-
-.nav-item ::deep a:hover {
-    background-color: rgba(255,255,255,0.1);
-    color: white;
-}
-
-@media (min-width: 641px) {
-    .navbar-toggler {
-        display: none;
-    }
-
-    .collapse {
-        Never collapse the sidebar for wide screens
-        display: block;
-    }
-} */

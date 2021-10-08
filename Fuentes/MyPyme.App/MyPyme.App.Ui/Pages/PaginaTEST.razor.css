@@ -1,6 +1,19 @@
-/* Archivo de estilos de la pagina PaginaTEST */
+#contenedor_lista {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista {
+	height: auto;
+}
+.texto {
+	padding:4px;
+	background:#fff;
+}
 
-#parrafo{
+/* #parrafo{
     color: blue;
     margin-left: 20px;
 }
@@ -8,7 +21,7 @@
 .lista{
     color:  rgb(105, 72, 255);
     margin-left: 50px;
-}
+} */
 
 .btn{
     margin-top: 20px;
