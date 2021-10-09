@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mgQbqVSLVwgBp7fLaYjDBXi2+oNMMCOmQ4GD01ZrwidwvolciOjavM0hcMMMN7zDF0yxkEudeHm16y/xmYD6LQ==",
+  "dgSpecHash": "oz0LLq3GxPcd95o806RSaA2DyuGUY1aDxF7/wRL4A8zERZAPFOWDg50XcTt8CutEKWYC00QokTJAjTo6spJaiw==",
   "success": true,
-  "projectFilePath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj",
+  "projectFilePath": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
