@@ -7,7 +7,7 @@
 <li type="circle">Julia Velez</li>
 <li type="circle">Sofía Gomez</li>
 <li type="circle">Juan Villegas</li>
-<li type="circle">pilar ramirez</li>
+<li type="circle">Adriana Pilar Ramirez</li>
 </ul>
 <h1>Enlace al diagrama</h1>
 <ul>
