@@ -11,5 +11,7 @@
 </ul>
 <h1>Enlace al diagrama</h1>
 <ul>
-<li>Diagrama aquí: https://drive.google.com/file/d/15B4PlnybmoOVrBvp5C9CSwC2yWhgjRgU/view?usp=sharing</li>
+<li>Diagrama Relacional aquí: https://drive.google.com/file/d/15B4PlnybmoOVrBvp5C9CSwC2yWhgjRgU/view?usp=sharing</li>
+<li>Maqueta de vistas aquí: https://whimsical.com/mintic-SGBb5BRBi7twDoGAVKg1W6</li>
 </ul>
+
