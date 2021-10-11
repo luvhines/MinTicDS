@@ -1,9 +1,10 @@
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\netstandard2.1\MyPyme.App.Database.deps.json
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\netstandard2.1\MyPyme.App.Database.dll
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\netstandard2.1\MyPyme.App.Database.pdb
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.csprojAssemblyReference.cache
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.AssemblyInfoInputs.cache
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.AssemblyInfo.cs
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.csproj.CoreCompileInputs.cache
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.dll
 C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.pdb
+C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.csproj.AssemblyReference.cache
+C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\netstandard2.1\MyPyme.App.Database.GeneratedMSBuildEditorConfig.editorconfig
