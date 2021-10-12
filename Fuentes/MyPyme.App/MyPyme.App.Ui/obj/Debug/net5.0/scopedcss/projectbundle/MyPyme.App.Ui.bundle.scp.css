@@ -1,42 +1,42 @@
 @import '';
 
 /* _content/MyPyme.App.Ui/Pages/index.razor.rz.scp.css */
-.contenido[b-kvso3n0ass]{
+.contenido[b-io3sryghfg]{
     display: block;
     height: 100%;
 }
 
-.tabla[b-kvso3n0ass]{
+.tabla[b-io3sryghfg]{
     width: 100%;
     height: 100%;
     text-align: center;
 }
 
-td[b-kvso3n0ass]{
+td[b-io3sryghfg]{
     height: 40%;
     width: 33.3%;  
 }
 
-#icon_2[b-kvso3n0ass]{
+#icon_2[b-io3sryghfg]{
     background-image: url("iconos/icon_2.png");
 }
-#icon_3[b-kvso3n0ass]{
+#icon_3[b-io3sryghfg]{
     background-image: url("iconos/icon_3.png");
 }
-#icon_4[b-kvso3n0ass]{
+#icon_4[b-io3sryghfg]{
     background-image: url("iconos/icon_4.png");
 }
-#icon_5[b-kvso3n0ass]{
+#icon_5[b-io3sryghfg]{
     background-image: url("iconos/icon_5.png");
 }
-#icon_6[b-kvso3n0ass]{
+#icon_6[b-io3sryghfg]{
     background-image: url("iconos/icon_6.png");
 }
-#icon_7[b-kvso3n0ass]{
+#icon_7[b-io3sryghfg]{
     background-image: url("iconos/icon_7.png");
 }
 
-.btnNav[b-kvso3n0ass]{
+.btnNav[b-io3sryghfg]{
     outline: none;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
@@ -48,19 +48,19 @@ td[b-kvso3n0ass]{
     background-position: center;
     transition-duration: 0.2s;
 }
-.btnNav:hover[b-kvso3n0ass]{
+.btnNav:hover[b-io3sryghfg]{
     transition-duration: 0.2s;
     background-color: rgb(134, 112, 255);
     width: 60%;
     height: 80%;
 }
-.btnNav:active[b-kvso3n0ass]{
+.btnNav:active[b-io3sryghfg]{
     transition-duration: 0.3s;
     border: -5px;
     border-color: rgb(232, 230, 240);
 }
 
-#etiqueta_btn[b-kvso3n0ass]{
+#etiqueta_btn[b-io3sryghfg]{
     padding: 0;
     margin: 0;
     height: 2%; 
@@ -70,17 +70,17 @@ td[b-kvso3n0ass]{
 
 
 /* _content/MyPyme.App.Ui/Pages/PaginaTEST.razor.rz.scp.css */
-#contenedor_lista[b-ca6yzdbuvw] {
+#contenedor_lista[b-ns2xuy1kgk] {
 	height: 50%;
 	width: 100%;
 	border: 1px solid #ddd;
 	background: #f1f1f1;
 	overflow-y: scroll;
 }
-#contenedor_lista-lista[b-ca6yzdbuvw] {
+#contenedor_lista-lista[b-ns2xuy1kgk] {
 	height: auto;
 }
-.texto[b-ca6yzdbuvw] {
+.texto[b-ns2xuy1kgk] {
 	padding:4px;
 	background:#fff;
 }
@@ -95,21 +95,21 @@ td[b-kvso3n0ass]{
     margin-left: 50px;
 } */
 
-.btn[b-ca6yzdbuvw]{
+.btn[b-ns2xuy1kgk]{
     margin-top: 20px;
 }
 /* _content/MyPyme.App.Ui/Shared/MainLayout.razor.rz.scp.css */
-*[b-l4h2y166dl]{
+*[b-tbrkohjn1u]{
     margin: 0%;
     padding:0%;
 }
-.page[b-l4h2y166dl] {
+.page[b-tbrkohjn1u] {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.cuerpo[b-l4h2y166dl] {
+.cuerpo[b-tbrkohjn1u] {
     padding-top: 1%; 
     padding-bottom: 1%;  
     padding-left: 2%;
@@ -119,7 +119,7 @@ td[b-kvso3n0ass]{
     justify-content: center;
 }
 
-.cabecera[b-l4h2y166dl] {
+.cabecera[b-tbrkohjn1u] {
     background-image: linear-gradient(180deg, #ffffff 0%, #c9c5da 70%);
     border-bottom: 2px solid #d6d5d5;
     height: 14%;
@@ -128,7 +128,7 @@ td[b-kvso3n0ass]{
     border-radius: 20px;
 }
 
-.pie[b-l4h2y166dl]{
+.pie[b-tbrkohjn1u]{
     background-image: linear-gradient(180deg, #c9c5da 0%, #ffffff 70%);
     border-top: 2px solid #d6d5d5;
     height: 14%;
@@ -136,21 +136,21 @@ td[b-kvso3n0ass]{
     border-radius: 50%;
 }
 
-ul[b-l4h2y166dl]{
+ul[b-tbrkohjn1u]{
     list-style: none;
     width: 100%;
     display: flex;
     align-items: center;
 } 
 
-#cabecera_div-1[b-l4h2y166dl]{
+#cabecera_div-1[b-tbrkohjn1u]{
     height: 100%;
     width: 33.33%;
     display: flex;
     align-items: center;
 }
 
-#cabecera_div-2[b-l4h2y166dl]{
+#cabecera_div-2[b-tbrkohjn1u]{
     height: 100%;
     width: 33.33%;
     display: flex;
@@ -158,14 +158,14 @@ ul[b-l4h2y166dl]{
     justify-content: center;
 }
 
-#cabecera_div-3[b-l4h2y166dl]{
+#cabecera_div-3[b-tbrkohjn1u]{
     height: 100%;
     width: 33.33%;
     display: flex;
     align-items: center;
 }
 
-#pie_div_1[b-l4h2y166dl]{
+#pie_div_1[b-tbrkohjn1u]{
     padding-top: 1%;
     height: 100%;
     width: 33.33%;
@@ -174,7 +174,7 @@ ul[b-l4h2y166dl]{
     justify-content: center;
 }
 
-#pie_div_2[b-l4h2y166dl]{
+#pie_div_2[b-tbrkohjn1u]{
     padding-top: 1%;
     height: 100%;
     width: 33.33%;
@@ -183,7 +183,7 @@ ul[b-l4h2y166dl]{
     justify-content: center;
 }
 
-#pie_div_3[b-l4h2y166dl]{
+#pie_div_3[b-tbrkohjn1u]{
     padding-top: 1%;
     height: 100%;
     width: 33.33%;

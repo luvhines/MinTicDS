@@ -1,14 +1,14 @@
-#contenedor_lista[b-ca6yzdbuvw] {
+#contenedor_lista[b-ns2xuy1kgk] {
 	height: 50%;
 	width: 100%;
 	border: 1px solid #ddd;
 	background: #f1f1f1;
 	overflow-y: scroll;
 }
-#contenedor_lista-lista[b-ca6yzdbuvw] {
+#contenedor_lista-lista[b-ns2xuy1kgk] {
 	height: auto;
 }
-.texto[b-ca6yzdbuvw] {
+.texto[b-ns2xuy1kgk] {
 	padding:4px;
 	background:#fff;
 }
@@ -23,6 +23,6 @@
     margin-left: 50px;
 } */
 
-.btn[b-ca6yzdbuvw]{
+.btn[b-ns2xuy1kgk]{
     margin-top: 20px;
 }
