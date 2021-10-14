@@ -9,7 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-// using MyPyme.App.Ui.Data;
+using MyPyme.App.Ui.Interfaces;
+using MyPyme.App.Ui.Servicios;
+using MyPyme.App.Ui.Data;
+
 
 namespace MyPyme.App.Ui
 {
@@ -28,6 +31,11 @@ namespace MyPyme.App.Ui
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
+            services.AddScoped<IServicioCliente, ServicioCliente>();
+
+            var configuracionConexionSql = new ConfiguracionSql(Configuration.GetConnectionString("ConexionSql"));
+            services.AddSingleton(configuracionConexionSql);
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
