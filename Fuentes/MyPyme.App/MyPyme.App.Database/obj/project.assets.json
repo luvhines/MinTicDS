@@ -1,9 +1,6 @@
 {
   "version": 3,
   "targets": {
-<<<<<<< HEAD
-    ".NETStandard,Version=v2.1": {}
-=======
     "net5.0": {
       "Dapper/2.0.90": {
         "type": "package",
@@ -492,18 +489,13 @@
       "path": "../MyPyme.App.Model/MyPyme.App.Model.csproj",
       "msbuildProject": "../MyPyme.App.Model/MyPyme.App.Model.csproj"
     }
->>>>>>> main
   },
   "projectFileDependencyGroups": {
-<<<<<<< HEAD
-    ".NETStandard,Version=v2.1": []
-=======
     "net5.0": [
       "MyPyme.App.Model >= 1.0.0",
       "System.Data.SqlClient >= 4.8.3",
       "dapper >= 2.0.90"
     ]
->>>>>>> main
   },
   "packageFolders": {
     "C:\\Users\\Home\\.nuget\\packages\\": {}
@@ -511,34 +503,29 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
+      "projectUniqueName": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
       "projectName": "MyPyme.App.Database",
-      "projectPath": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
+      "projectPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\obj\\",
+      "outputPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "netstandard2.1"
+        "net5.0"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-<<<<<<< HEAD
-        "netstandard2.1": {
-          "projectReferences": {}
-=======
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj": {
-              "projectPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj"
+            "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj": {
+              "projectPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj"
             }
           }
->>>>>>> main
         }
       },
       "warningProperties": {
@@ -548,9 +535,6 @@
       }
     },
     "frameworks": {
-<<<<<<< HEAD
-      "netstandard2.1": {
-=======
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
@@ -563,7 +547,6 @@
             "version": "[2.0.90, )"
           }
         },
->>>>>>> main
         "imports": [
           "net461",
           "net462",
@@ -575,11 +558,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "NETStandard.Library": {
+          "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

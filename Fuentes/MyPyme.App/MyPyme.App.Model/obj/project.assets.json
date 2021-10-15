@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.model\\MyPyme.App.Model.csproj",
+      "projectUniqueName": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
       "projectName": "MyPyme.App.Model",
-      "projectPath": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.model\\MyPyme.App.Model.csproj",
+      "projectPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
       "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
-      "outputPath": "C:\\Grupo59-5\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.model\\obj\\",
+      "outputPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"
