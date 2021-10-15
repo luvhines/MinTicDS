@@ -498,19 +498,19 @@
     ]
   },
   "packageFolders": {
-    "/home/luis/.nuget/packages/": {}
+    "C:\\Users\\Home\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/MyPyme.App.Database.csproj",
+      "projectUniqueName": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
       "projectName": "MyPyme.App.Database",
-      "projectPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/MyPyme.App.Database.csproj",
-      "packagesPath": "/home/luis/.nuget/packages/",
-      "outputPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/",
+      "projectPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
+      "packagesPath": "C:\\Users\\Home\\.nuget\\packages\\",
+      "outputPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/luis/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Home\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -522,8 +522,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj": {
-              "projectPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj"
+            "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj": {
+              "projectPath": "C:\\g 59 nueva\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj"
             }
           }
         }
@@ -562,7 +562,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
