@@ -1,0 +1,57 @@
+﻿@page "/clientesguardar"
+
+@using Model.Clases
+@using Interfaces
+@inject IServicioCliente ServicioCliente
+
+<div class="cabecera_pag">
+    <div class="cabecera_pag_zona1">
+        <div id="icon1"></div>
+    </div>
+    <div class="cabecera_pag_zona2">
+        <h3>Clientes</h3>
+    </div>
+    <div class="cabecera_pag_zona3">
+        <button id="boton_home"><a href="/"></a></button>
+    </div>
+</div>
+
+<EditForm Model="cliente">
+
+    <table class="table">
+        <tr>
+            <td><label id="lbl1" for="nombre">Nombre</label></td>
+            <td id="td2"><input type="text" @bind="cliente.Nombre"></td>
+        </tr>
+        <tr>
+            <td><label id="lbl1" for="cedula">Cedula</label></td>
+            <td id="td2"><input type="text" @bind="cliente.Cedula"></td>
+        </tr>
+        <tr>
+            <td><label id="lbl1" for="correo">Correo</label></td>
+            <td id="td2"><input type="text" @bind="cliente.Correo"></td>
+        </tr>
+        <tr colspan="2">
+            <td><input id="lbl1" type="submit" value="Guardar" @onclick="Guardar"></td>
+            <td id="td2" ><input  type="button" value="Cancelar" @onclick="Cancelar"></td>
+        </tr>
+
+    </table>
+
+</EditForm>
+
+@code {
+
+    Cliente cliente = new Cliente();
+
+    protected void Cancelar()
+    {
+
+    }
+
+    protected async Task Guardar()
+    {
+        await ServicioCliente.GuardarCliente(cliente);
+    }
+
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\net5.0\MyPyme.App.Model.deps.json
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\net5.0\MyPyme.App.Model.dll
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\net5.0\ref\MyPyme.App.Model.dll
@@ -10,3 +11,17 @@ C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\net5.0\MyPy
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\net5.0\MyPyme.App.Model.dll
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\net5.0\ref\MyPyme.App.Model.dll
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\net5.0\MyPyme.App.Model.pdb
+=======
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.deps.json
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/ref/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.AssemblyInfoInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.AssemblyInfo.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.csproj.CoreCompileInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/ref/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.csproj.AssemblyReference.cache
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de

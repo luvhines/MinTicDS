@@ -7,4 +7,8 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = MyPyme.App.Ui
+<<<<<<< HEAD
 build_property.ProjectDir = C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\
+=======
+build_property.ProjectDir = /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
