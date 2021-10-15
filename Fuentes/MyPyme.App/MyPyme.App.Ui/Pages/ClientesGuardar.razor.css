@@ -1,13 +1,4 @@
-#contenedor_lista {
-	height: 50%;
-	width: 100%;
-	border: 1px solid #ddd;
-	background: #f1f1f1;
-	overflow-y: scroll;
-}
-#contenedor_lista-lista {
-	height: auto;
-}
+
 .texto {
 	padding:4px;
 	background:#fff;
@@ -53,11 +44,12 @@
 	width: 25%;
 	height: 100%;
 	border:none;
+    outline: none;
 	border-radius:30px;
 	background-color: rgb(169, 155, 248);
 	background-image: url("iconos/icon_11.png");
 	background-repeat: no-repeat;
-    background-size:75%;
+    background-size:50%;
     background-position: left;
 	margin-right: 15%;
 }
@@ -67,7 +59,7 @@
 	height: 100%;
 	background-image: url("iconos/icon_3.png");
 	background-repeat: no-repeat;
-    background-size:75%;
+    background-size:50%;
     background-position: left;
 	margin-left: 15%;
 }
@@ -76,10 +68,22 @@ h3{
 }
 a{
 	display:block;
-	width:100%;
+	width: 50%;
 	height:100%;
+	/* background-color: aquamarine; */
 }
 
 .btn{
 	text-align:center;
+}
+
+
+#td2{
+	width: 80%;
+	text-align:left;
+
+}
+
+#lbl1{
+	margin-left: 30%;
 }

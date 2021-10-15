@@ -1,0 +1,84 @@
+@page "/clienteslista"
+
+@using Model.Clases
+@using Interfaces
+
+<div class="cabecera_pag">
+    <div class="cabecera_pag_zona1">
+        <div id="icon1"></div>
+    </div>
+    <div class="cabecera_pag_zona2">
+        <h3>Lista De Clientes</h3>
+    </div>
+    <div class="cabecera_pag_zona3">
+        <button id="boton_home"><a id="a-home" href="/"></a></button>
+    </div>
+</div>
+
+@* <div id="contenedor_lista">
+    <div id="contenedor_lista-lista">
+    <ul class="list-group list-group-flush">
+    @for (var i = 0; i < 50; i++)
+    {
+    <li class="list-group-item">Esto es un elemento @i</li>
+    }
+    </ul>
+    </div>
+    </div> *@
+
+<div id="cabecera-lista">
+    <table class="table">
+        <tr id="cabecera-lista-tr" colspan="5">
+            <td class="lista">NOMBRE</td>
+            <td class="lista">CEDULA</td>
+            <td class="lista">TELEFONO</td>
+            <td class="lista">CORREO</td>
+            <td class="lista">
+                <button class="btn-crear">
+                    <a id="enlace-crear" href="/clientesguardar">Crear Cliente</a>
+                </button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="contenedor_lista">
+    <div id="contenedor_lista-lista">
+        <table class="table">
+            @for (var i = 0; i < 10; i++)
+            {
+                <tr colspan="5">
+                    <td class="lista">Elemento NOMBRE @i</td>
+                    <td class="lista">Elemento CEDULA @i</td>
+                    <td class="lista">Elemento TELEFONO @i</td>
+                    <td class="lista">Elemento CORREO @i</td>
+                    <td class="lista">
+                         <a href="clientesLista"><i id="tag-crud">Borrar</i></a>
+                        <a href="clientesLista"><i id="tag-crud">Editar</i></a>
+                        <a href="clientesLista"><i id="tag-crud">Detalles</i></a>
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+</div>
+
+@* <form>
+    <div class="row mb-3">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+    <input type="email" class="form-control" id="inputEmail3">
+    </div>
+    </div>
+    <div class="row mb-3">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+    <div class="col-sm-10">
+    <input type="password" class="form-control" id="inputPassword3">
+    </div>
+    </div>
+    <div class="col-sm-10">
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+    </form> *@
+
+@code {}

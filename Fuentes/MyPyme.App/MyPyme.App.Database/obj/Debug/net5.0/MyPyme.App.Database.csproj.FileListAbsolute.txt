@@ -1,0 +1,15 @@
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/MyPyme.App.Database.deps.json
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/MyPyme.App.Database.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/ref/MyPyme.App.Database.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/MyPyme.App.Database.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/bin/Debug/net5.0/MyPyme.App.Model.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.csproj.AssemblyReference.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.AssemblyInfoInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.AssemblyInfo.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.csproj.CoreCompileInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.csproj.CopyComplete
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/ref/MyPyme.App.Database.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Database/obj/Debug/net5.0/MyPyme.App.Database.pdb

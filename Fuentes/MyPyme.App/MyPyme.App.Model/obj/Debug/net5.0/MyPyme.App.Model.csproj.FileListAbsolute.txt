@@ -1,0 +1,12 @@
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.deps.json
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/ref/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/bin/Debug/net5.0/MyPyme.App.Model.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.GeneratedMSBuildEditorConfig.editorconfig
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.AssemblyInfoInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.AssemblyInfo.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.csproj.CoreCompileInputs.cache
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/ref/MyPyme.App.Model.dll
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.pdb
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/Debug/net5.0/MyPyme.App.Model.csproj.AssemblyReference.cache
