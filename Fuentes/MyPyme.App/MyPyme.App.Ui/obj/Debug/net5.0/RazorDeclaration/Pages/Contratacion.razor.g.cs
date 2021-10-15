@@ -105,7 +105,7 @@ using Interfaces;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 115 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\Pages\Contratacion.razor"
+#line 117 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\Pages\Contratacion.razor"
        
 
     Empleado empleado = new Empleado();
