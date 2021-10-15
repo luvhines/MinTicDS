@@ -1,9 +1,0 @@
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\netstandard2.1\MyPyme.App.Model.deps.json
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\netstandard2.1\MyPyme.App.Model.dll
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\bin\Debug\netstandard2.1\MyPyme.App.Model.pdb
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.csprojAssemblyReference.cache
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.AssemblyInfoInputs.cache
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.AssemblyInfo.cs
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.csproj.CoreCompileInputs.cache
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.dll
-C:\Grupo59-5\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\obj\Debug\netstandard2.1\MyPyme.App.Model.pdb
