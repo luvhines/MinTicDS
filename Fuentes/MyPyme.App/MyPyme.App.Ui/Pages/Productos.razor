@@ -6,10 +6,10 @@
 
 <div class="cabecera_pag">
     <div class="cabecera_pag_zona1">
-        <div id="icon2"></div>
+        <div id="icon5"></div>
     </div>
     <div class="cabecera_pag_zona2">
-        <h3>Producto</h3>
+        <h3><b>Producto en stop</b> </h3>
     </div>
     <div class="cabecera_pag_zona3">
         <button id="boton_home"><a href="/"></a></button>
@@ -39,36 +39,30 @@
 <EditForm Model="producto">
 
     <table class="table">
-        <tr>
-            <td><label for="Codigo">Codigo</label></td>
-            <td><input type="text" @bind="producto.Codigo"></td>
-        </tr>
-         <tr>
-            <td><label for="Nombre Producto">Nombre</label></td>
-            <td><input type="text" @bind="producto.Nombre"></td>
-        </tr>
         
-
         <tr>
-            <td><label for="ValorUnitario">Valor Unitario</label></td>
-            <td><input type="text"  @bind="producto.ValorUnitario"></td>
+            <td><label for="Codigo"><h2>Codigo :</h2></label></td>
+            <td><h1><input type="text" @bind="producto.Codigo"></h1></td>
+        </tr>  
+         <tr>
+            <td><label for="Nombre Producto"><h2>Nombre : </h2></label></td>
+            <td><h1><input type="text" placeholder="Producto"@bind="producto.Nombre"></h1></td>
+        </tr>     
+        
+        <tr>
+            <td><label for="ValorUnitario"><h2>Valor Unitario : </h2></label></td>
+            <td><h1><input type="text"@bind="producto.ValorUnitario"></h1></td>
         </tr>
-
         <tr>
-            <td><label for="Cantidad">Cantidad</label></td>
-            <td><input type="text" @bind="producto.Cantidad"></td>
-            
+            <td><label for="Cantidad"><h2>Cantidad:</h2></label></td>
+            <td><h1><input type="text" @bind="producto.Cantidad"></h1></td>        
         </tr>
         
         <tr colspan="2" style="text-align: center">
-            <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
-            <td><input type="button" value="Cancelar" @onclick="Cancelar"></td>
-        </tr>
-       
-
-
+            <td><h1><input type="submit" value="Guardar" @onclick="Guardar"></h1></td>
+            <td><h1><input type="button" value="Cancelar" @onclick="Cancelar"></h1></td>
+        </tr>    
     </table>
-
 </EditForm>
 
 
