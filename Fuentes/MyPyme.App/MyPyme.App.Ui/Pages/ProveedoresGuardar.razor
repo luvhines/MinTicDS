@@ -1,4 +1,4 @@
-﻿@page "/guardarClientes"
+﻿@page "/proveedoresguardar"
 
 @using Model.Clases
 @using Interfaces
@@ -9,7 +9,7 @@
         <div id="icon1"></div>
     </div>
     <div class="cabecera_pag_zona2">
-        <h3>Clientes</h3>
+        <h3>Proveedores</h3>
     </div>
     <div class="cabecera_pag_zona3">
         <button id="boton_home"><a href="/"></a></button>
@@ -17,7 +17,7 @@
 </div>
 
 @* <div id="contenedor_lista">
-    <div id="contenedor_lista-lista">
+    <div id="contenedor_lista-lista"> 
     <ul class="list-group list-group-flush">
     @for (var i = 0; i < 50; i++)
     {
@@ -36,24 +36,34 @@
     <li>Elemento 3</li>
     </ul> *@
 
-<EditForm Model="cliente">
+<EditForm Model="proveedor"> 
 
     <table class="table">
         <tr>
-            <td><label for="nombre">Nombre</label></td>
-            <td><input type="text" @bind="cliente.Nombre"></td>
+            <td ><label id="lbl1" for="NIT">NIT</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.Nit"></td>
         </tr>
         <tr>
-            <td><label for="cedula">Cedula</label></td>
-            <td><input type="text" @bind="cliente.Cedula"></td>
+            <td ><label id="lbl1"  for="Nombre Proveedor">Nombre</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.Nombre"></td>
         </tr>
         <tr>
-            <td><label for="cedula">Correo</label></td>
-            <td><input type="text" @bind="cliente.Correo"></td>
+            <td ><label id="lbl1"  for="Telefono">Telefono</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.Telefono"></td>
         </tr>
+
+        <tr> 
+            <td ><label id="lbl1" for="Direccion">Direccion</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.Direccion"></td>
+        </tr>
+        <tr>
+            <td><label id="lbl1"  for="Correo">Correo</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.Correo"></td>
+        </tr>
+
         <tr colspan="2" style="text-align: center">
             <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
-            <td><input type="button" value="Cancelar" @onclick="Cancelar"></td>
+            <td id="td2"><input type="button" value="Cancelar" @onclick="Cancelar"></td>
         </tr>
 
     </table>
@@ -88,16 +98,21 @@
 
 @code {
 
-    Cliente cliente = new Cliente();
+    Proveedor proveedor = new Proveedor();
 
     protected void Cancelar()
     {
 
     }
+    protected void Guardar()
+    {
 
-    protected async Task Guardar()
+    }
+
+    /*protected async Task Guardar()
     {
         await ServicioCliente.GuardarCliente(cliente);
     }
+    */
 
 }

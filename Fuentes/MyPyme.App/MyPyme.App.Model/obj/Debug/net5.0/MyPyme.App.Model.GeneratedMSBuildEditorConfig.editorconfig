@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = MyPyme.App.Model
-build_property.ProjectDir = C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Model\
+build_property.ProjectDir = /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/
