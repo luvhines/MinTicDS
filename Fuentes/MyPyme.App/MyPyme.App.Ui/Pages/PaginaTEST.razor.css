@@ -1,28 +1,30 @@
-#contenedor_lista {
-	height: 50%;
-	width: 100%;
-	border: 1px solid #ddd;
-	background: #f1f1f1;
-	overflow-y: scroll;
-}
-#contenedor_lista-lista {
-	height: auto;
-}
-.texto {
-	padding:4px;
-	background:#fff;
+#contenedorboton {
+    outline: none;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(7, 231, 157);
 }
 
-/* #parrafo{
-    color: blue;
-    margin-left: 20px;
+#icon_2 {
+    background-image: url("iconos/icon_2.png");
 }
 
-.lista{
-    color:  rgb(105, 72, 255);
-    margin-left: 50px;
-} */
+.btnNav {
+    outline: none;
+    border: 2px solid rgb(134, 112, 255);
+    background-color: rgb(169, 155, 248);
+    width: 100%;
+    height: 60px;
+    border-radius: 90px;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    transition-duration: 0.2s;
+}
 
-.btn{
-    margin-top: 20px;
+#etiqueta_btn {
+    padding: 0;
+    margin: 0;
+    height: 2%;
+    color: rgb(134, 112, 255);
+    font-size: 120%;
 }
