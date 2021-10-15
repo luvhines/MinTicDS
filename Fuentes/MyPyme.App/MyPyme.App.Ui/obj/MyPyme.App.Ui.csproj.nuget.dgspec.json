@@ -1,0 +1,188 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Ui\\MyPyme.App.Ui.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
+        "projectName": "MyPyme.App.Database",
+        "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj",
+        "packagesPath": "C:\\Users\\braso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\braso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj": {
+                "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
+            },
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.90, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
+        "projectName": "MyPyme.App.Model",
+        "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
+        "packagesPath": "C:\\Users\\braso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\braso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Ui\\MyPyme.App.Ui.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Ui\\MyPyme.App.Ui.csproj",
+        "projectName": "MyPyme.App.Ui",
+        "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Ui\\MyPyme.App.Ui.csproj",
+        "packagesPath": "C:\\Users\\braso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Ui\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\braso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj": {
+                "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Database\\MyPyme.App.Database.csproj"
+              },
+              "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj": {
+                "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

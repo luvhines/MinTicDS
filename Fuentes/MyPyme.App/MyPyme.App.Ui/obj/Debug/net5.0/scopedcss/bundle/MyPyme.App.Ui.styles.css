@@ -1,0 +1,333 @@
+/* _content/MyPyme.App.Ui/Pages/Clientes.razor.rz.scp.css */
+#contenedor_lista[b-j83c1tefg9] {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-j83c1tefg9] {
+	height: auto;
+}
+.texto[b-j83c1tefg9] {
+	padding:4px;
+	background:#fff;
+}
+
+.btn[b-j83c1tefg9]{
+    margin-top: 20px;
+}
+
+.cabecera_pag[b-j83c1tefg9]{
+	height:15%;
+	width: 100%;
+	border: 2px solid rgb(134, 112, 255);
+    background-color: rgb(169, 155, 248);
+	border-radius: 30px;
+	margin-bottom: 20px;
+	display:flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+.cabecera_pag_zona1[b-j83c1tefg9]{
+	width:33.33%;
+	height:100%;
+	text-align:center;
+}
+
+.cabecera_pag_zona2[b-j83c1tefg9]{
+	width:33.33%;
+	text-align:center;
+}
+.cabecera_pag_zona2_icon[b-j83c1tefg9]{
+	height: 100%;
+	width: 100%;
+}
+
+.cabecera_pag_zona3[b-j83c1tefg9]{
+	width:33.33%;
+	height: 100%;
+	text-align:right;
+}
+#boton_home[b-j83c1tefg9]{
+	width: 25%;
+	height: 100%;
+	border:none;
+	border-radius:30px;
+	background-color: rgb(169, 155, 248);
+	background-image: url("iconos/icon_11.png");
+	background-repeat: no-repeat;
+    background-size:75%;
+    background-position: left;
+	margin-right: 15%;
+}
+
+#icon1[b-j83c1tefg9]{
+	width:25%;
+	height: 100%;
+	background-image: url("iconos/icon_3.png");
+	background-repeat: no-repeat;
+    background-size:75%;
+    background-position: left;
+	margin-left: 15%;
+}
+h3[b-j83c1tefg9]{
+	padding-top:10px;
+}
+a[b-j83c1tefg9]{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.btn[b-j83c1tefg9]{
+	text-align:center;
+}
+/* _content/MyPyme.App.Ui/Pages/index.razor.rz.scp.css */
+.contenido[b-io3sryghfg]{
+    display: block;
+    height: 100%;
+}
+
+.tabla[b-io3sryghfg]{
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+}
+
+td[b-io3sryghfg]{
+    height: 40%;
+    width: 33.3%;  
+}
+
+#icon_2[b-io3sryghfg]{
+    background-image: url("iconos/icon_2.png");
+}
+#icon_3[b-io3sryghfg]{
+    background-image: url("iconos/icon_3.png");
+}
+#icon_4[b-io3sryghfg]{
+    background-image: url("iconos/icon_4.png");
+}
+#icon_5[b-io3sryghfg]{
+    background-image: url("iconos/icon_5.png");
+}
+#icon_6[b-io3sryghfg]{
+    background-image: url("iconos/icon_6.png");
+}
+#icon_7[b-io3sryghfg]{
+    background-image: url("iconos/icon_7.png");
+}
+
+.btnNav[b-io3sryghfg]{
+    outline: none;
+    border: 2px solid rgb(134, 112, 255);
+    background-color: rgb(169, 155, 248);
+    width: 55%;
+    height: 75%;
+    border-radius: 90px;
+    background-repeat: no-repeat;
+    background-size:40%;
+    background-position: center;
+    transition-duration: 0.2s;
+}
+.btnNav:hover[b-io3sryghfg]{
+    transition-duration: 0.2s;
+    background-color: rgb(134, 112, 255);
+    width: 60%;
+    height: 80%;
+}
+.btnNav:active[b-io3sryghfg]{
+    transition-duration: 0.3s;
+    border: -5px;
+    border-color: rgb(232, 230, 240);
+}
+
+#etiqueta_btn[b-io3sryghfg]{
+    padding: 0;
+    margin: 0;
+    height: 2%; 
+    color: rgb(134, 112, 255);
+    font-size: 120%; 
+}
+/* _content/MyPyme.App.Ui/Pages/Proveedores.razor.rz.scp.css */
+#contenedor_lista[b-vm6xtohvjt] {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-vm6xtohvjt] {
+	height: auto;
+}
+.texto[b-vm6xtohvjt] {
+	padding:4px;
+	background:#fff;
+}
+
+.btn[b-vm6xtohvjt]{
+    margin-top: 20px;
+}
+
+.cabecera_pag[b-vm6xtohvjt]{
+	height:15%;
+	width: 100%;
+	border: 2px solid rgb(134, 112, 255);
+    background-color: rgb(169, 155, 248);
+	border-radius: 30px;
+	margin-bottom: 20px;
+	display:flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+.cabecera_pag_zona1[b-vm6xtohvjt]{
+	width:33.33%;
+	height:100%;
+	text-align:center;
+}
+
+.cabecera_pag_zona2[b-vm6xtohvjt]{
+	width:33.33%;
+	text-align:center;
+}
+.cabecera_pag_zona2_icon[b-vm6xtohvjt]{
+	height: 100%;
+	width: 100%;
+}
+
+.cabecera_pag_zona3[b-vm6xtohvjt]{
+	width:33.33%;
+	height: 100%;
+	text-align:right;
+}
+#boton_home[b-vm6xtohvjt]{
+	width: 25%;
+	height: 100%;
+	border:none;
+	border-radius:30px;
+	background-color: rgb(169, 155, 248);
+	background-image: url("iconos/icon_11.png");
+	background-repeat: no-repeat;
+    background-size:75%;
+    background-position: left;
+	margin-right: 15%;
+}
+
+#icon1[b-vm6xtohvjt]{
+	width:25%;
+	height: 100%;
+	background-image: url("iconos/icon_3.png");
+	background-repeat: no-repeat;
+    background-size:75%;
+    background-position: left;
+	margin-left: 15%;
+}
+h3[b-vm6xtohvjt]{
+	padding-top:10px;
+}
+a[b-vm6xtohvjt]{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+.btn[b-vm6xtohvjt]{
+	text-align:center;
+}
+/* _content/MyPyme.App.Ui/Shared/MainLayout.razor.rz.scp.css */
+*[b-tbrkohjn1u]{
+    margin: 0%;
+    padding:0%;
+}
+.page[b-tbrkohjn1u] {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.cuerpo[b-tbrkohjn1u] {
+    padding-top: 1%; 
+    padding-bottom: 1%;  
+    padding-left: 2%;
+    padding-right: 2%;
+
+    height: 68%; 
+    justify-content: center;
+}
+
+.cabecera[b-tbrkohjn1u] {
+    background-image: linear-gradient(180deg, #ffffff 0%, #c9c5da 70%);
+    border-bottom: 2px solid #d6d5d5;
+    height: 14%;
+    display: flex;   
+    align-items: center;
+    border-radius: 20px;
+}
+
+.pie[b-tbrkohjn1u]{
+    background-image: linear-gradient(180deg, #c9c5da 0%, #ffffff 70%);
+    border-top: 2px solid #d6d5d5;
+    height: 14%;
+    display: flex;
+    border-radius: 50%;
+}
+
+ul[b-tbrkohjn1u]{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+} 
+
+#cabecera_div-1[b-tbrkohjn1u]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+#cabecera_div-2[b-tbrkohjn1u]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#cabecera_div-3[b-tbrkohjn1u]{
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+}
+
+#pie_div_1[b-tbrkohjn1u]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pie_div_2[b-tbrkohjn1u]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pie_div_3[b-tbrkohjn1u]{
+    padding-top: 1%;
+    height: 100%;
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,15 @@
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\MyPyme.App.Database.deps.json
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\MyPyme.App.Database.dll
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\ref\MyPyme.App.Database.dll
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\MyPyme.App.Database.pdb
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\MyPyme.App.Model.dll
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\bin\Debug\net5.0\MyPyme.App.Model.pdb
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.csproj.AssemblyReference.cache
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.AssemblyInfoInputs.cache
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.AssemblyInfo.cs
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.csproj.CoreCompileInputs.cache
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.csproj.CopyComplete
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.dll
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\ref\MyPyme.App.Database.dll
+C:\Users\braso\OneDrive\Mision2022\Programación\Ciclo 3\Proyecto\git\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.Database\obj\Debug\net5.0\MyPyme.App.Database.pdb

@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/luis/.nuget/packages/": {}
+    "C:\\Users\\braso\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj",
+      "projectUniqueName": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
       "projectName": "MyPyme.App.Model",
-      "projectPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/MyPyme.App.Model.csproj",
-      "packagesPath": "/home/luis/.nuget/packages/",
-      "outputPath": "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Model/obj/",
+      "projectPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\MyPyme.App.Model.csproj",
+      "packagesPath": "C:\\Users\\braso\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\braso\\OneDrive\\Mision2022\\Programación\\Ciclo 3\\Proyecto\\git\\MinTicDS\\Fuentes\\MyPyme.App\\MyPyme.App.Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/luis/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\braso\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
