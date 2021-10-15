@@ -71,3 +71,6 @@ C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\MyPyme.
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\RazorDeclaration\Pages\Productos.razor.g.cs
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\Razor\Pages\Productos.razor.g.cs
 C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\scopedcss\Pages\Productos.razor.rz.scp.css
+C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\RazorDeclaration\Pages\Pqrstodo.razor.g.cs
+C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\Razor\Pages\Pqrstodo.razor.g.cs
+C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\scopedcss\Pages\pqrstodo.razor.rz.scp.css
