@@ -1,3 +1,7 @@
 ﻿<StaticWebAssets Version="1.0">
+<<<<<<< HEAD
+  <ContentRoot BasePath="/" Path="C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\obj\Debug\net5.0\scopedcss\bundle\" />
+=======
   <ContentRoot BasePath="/" Path="/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/bundle/" />
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 </StaticWebAssets>

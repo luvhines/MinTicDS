@@ -13,123 +13,118 @@ namespace MyPyme.App.Ui.Pages
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Components;
 #nullable restore
-<<<<<<< HEAD
 #line 1 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 1 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using System.Net.Http;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 2 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 2 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 3 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 3 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Components.Authorization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 4 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 4 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Components.Forms;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 5 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 5 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Components.Routing;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 6 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 6 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Components.Web;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 7 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 7 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.AspNetCore.Components.Web.Virtualization;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 8 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 8 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using Microsoft.JSInterop;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 9 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 9 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using MyPyme.App.Ui;
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-<<<<<<< HEAD
 #line 10 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\_Imports.razor"
-=======
-#line 10 "/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/_Imports.razor"
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
 using MyPyme.App.Ui.Shared;
 
 #line default
 #line hidden
 #nullable disable
-    [Microsoft.AspNetCore.Components.RouteAttribute("/")]
-    public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
+#nullable restore
+#line 3 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\Pages\Clientes.razor"
+using Model.Clases;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\Pages\Clientes.razor"
+using Interfaces;
+
+#line default
+#line hidden
+#nullable disable
+    [Microsoft.AspNetCore.Components.RouteAttribute("/guardarClientes")]
+    public partial class Clientes : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998
         protected override void BuildRenderTree(Microsoft.AspNetCore.Components.Rendering.RenderTreeBuilder __builder)
         {
         }
         #pragma warning restore 1998
+#nullable restore
+#line 89 "C:\g 59 nueva\MinTicDS\Fuentes\MyPyme.App\MyPyme.App.ui\Pages\Clientes.razor"
+       
+
+    Cliente cliente = new Cliente();
+
+    protected void Cancelar()
+    {
+
+    }
+
+    protected async Task Guardar()
+    {
+        await ServicioCliente.GuardarCliente(cliente);
+    }
+
+
+#line default
+#line hidden
+#nullable disable
+        [global::Microsoft.AspNetCore.Components.InjectAttribute] private IServicioCliente ServicioCliente { get; set; }
     }
 }
 #pragma warning restore 1591

@@ -356,7 +356,11 @@
           "runtimes/win-arm64/native/sni.dll": {
             "rid": "win-arm64",
             "assetType": "native",
+<<<<<<< HEAD
+            "fileVersion": "4.6.25512.1"
+=======
             "fileVersion": "0.0.0.0"
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
           }
         }
       },
@@ -365,7 +369,11 @@
           "runtimes/win-x64/native/sni.dll": {
             "rid": "win-x64",
             "assetType": "native",
+<<<<<<< HEAD
+            "fileVersion": "4.6.25512.1"
+=======
             "fileVersion": "0.0.0.0"
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
           }
         }
       },
@@ -374,7 +382,11 @@
           "runtimes/win-x86/native/sni.dll": {
             "rid": "win-x86",
             "assetType": "native",
+<<<<<<< HEAD
+            "fileVersion": "4.6.25512.1"
+=======
             "fileVersion": "0.0.0.0"
+>>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
           }
         }
       },
