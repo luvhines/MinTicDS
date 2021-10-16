@@ -2,6 +2,10 @@
 
 @using Model.Clases
 @using Interfaces
+@using MyPyme.App.Ui.Componentes
+@inject IServicioCliente ServicioCliente
+@inject NavigationManager Navegador
+
 
 <div class="cabecera_pag">
     <div class="cabecera_pag_zona1">
@@ -15,70 +19,96 @@
     </div>
 </div>
 
-@* <div id="contenedor_lista">
-    <div id="contenedor_lista-lista">
-    <ul class="list-group list-group-flush">
-    @for (var i = 0; i < 50; i++)
-    {
-    <li class="list-group-item">Esto es un elemento @i</li>
-    }
-    </ul>
-    </div>
-    </div> *@
-
 <div id="cabecera-lista">
     <table class="table">
-        <tr id="cabecera-lista-tr" colspan="5">
-            <td class="lista">NOMBRE</td>
-            <td class="lista">CEDULA</td>
-            <td class="lista">TELEFONO</td>
-            <td class="lista">CORREO</td>
-            <td class="lista">
-                <button class="btn-crear">
-                    <a id="enlace-crear" href="/clientesguardar">Crear Cliente</a>
-                </button>
+        <tr id="cabecera-lista-tr" colspan="4">
+            <td class="cabecera-lista-tr-td">NOMBRE</td>
+            <td class="cabecera-lista-tr-td">CEDULA</td>
+            <td class="cabecera-lista-tr-td">CORREO</td>
+            <td class="cabecera-lista-tr-td">
+                <a id="enlace-crear" href="/clientesguardar">
+                    <button class="btn-crear">Insertar Cliente</button>
+                </a>
             </td>
         </tr>
     </table>
 </div>
-<div id="contenedor_lista">
-    <div id="contenedor_lista-lista">
-        <table class="table">
-            @for (var i = 0; i < 10; i++)
-            {
-                <tr colspan="5">
-                    <td class="lista">Elemento NOMBRE @i</td>
-                    <td class="lista">Elemento CEDULA @i</td>
-                    <td class="lista">Elemento TELEFONO @i</td>
-                    <td class="lista">Elemento CORREO @i</td>
-                    <td class="lista">
-                         <a href="clientesLista"><i id="tag-crud">Borrar</i></a>
-                        <a href="clientesLista"><i id="tag-crud">Editar</i></a>
-                        <a href="clientesLista"><i id="tag-crud">Detalles</i></a>
-                    </td>
-                </tr>
-            }
 
-        </table>
-    </div>
-</div>
+@if(clientes == null)
+{
+    <p><i>"Cargarando..."</i></p>
+}
+else{
+    <div id="contenedor_lista">
+        <div id="contenedor_lista-lista">
+            <table class="table">
+                @foreach (Cliente cliente in clientes)
+                {
+                    <tr colspan="4">
+                        <td class="cabecera-lista-tr-td">@cliente.cli_nombre</td>
+                        <td class="cabecera-lista-tr-td">@cliente.cli_cedula</td>
+                        <td class="cabecera-lista-tr-td">@cliente.cli_correo</td>
+                        <td class="cabecera-lista-tr-td">
+                            <a href="/clienteslista" @onclick="() => AbrirModal(cliente)"><i id="tag-crud">Borrar</i></a>
+                            <a href="/clientesguardar/@cliente.Id"><i id="tag-crud">Editar</i></a>
+                            <a href="/clienteslista"><i id="tag-crud">Detalles</i></a>
+                        </td>
+                    </tr>
+                }
 
-@* <form>
-    <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-    <input type="email" class="form-control" id="inputEmail3">
+            </table>
+        </div>
     </div>
-    </div>
-    <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-    <input type="password" class="form-control" id="inputPassword3">
-    </div>
-    </div>
-    <div class="col-sm-10">
-    <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-    </form> *@
+}
 
-@code {}
+@if(MostrarModal)
+{
+    <ModalConfirmacion  Titulo="¿Está seguro?" 
+                        Texto="Se dispone a eliminar un Cliente de la base de datos..."
+                        OnClose="@CerrarModal">
+
+    </ModalConfirmacion> 
+}
+
+@code {
+    private IEnumerable<Cliente> clientes;
+
+    private Cliente _clienteAborrar;
+    public bool MostrarModal { get; set; }
+    private async Task CerrarModal(bool aceptado)
+    {
+        if (aceptado)
+        {
+            @* Navegador.NavigateTo("/"); *@
+            Navegador.NavigateTo("/clienteslista",true);
+            await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
+        }
+
+        MostrarModal = false;
+        StateHasChanged();
+    }
+
+    private void AbrirModal(Cliente clienteAborrar)
+    {
+        _clienteAborrar = clienteAborrar;
+        MostrarModal = true;
+        StateHasChanged();
+    }
+
+    @* protected async Task BorrarCliente()
+    {
+        await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
+    } *@
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            clientes= await ServicioCliente.GetListaClientes();
+        }
+        catch (System.Exception ex)
+        {
+             // TODO
+        }
+    }
+}

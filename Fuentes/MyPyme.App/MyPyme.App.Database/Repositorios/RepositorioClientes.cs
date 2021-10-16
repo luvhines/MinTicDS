@@ -1,3 +1,4 @@
+using System.Runtime.Intrinsics.X86;
 using System;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,14 +24,24 @@ namespace MyPyme.App.Database.Repositorios
             return new SqlConnection(CadenaDeConexion);
         }
 
-        public Task<IEnumerable<Cliente>> GetListaClientes()
+        public async Task<IEnumerable<Cliente>> GetListaClientes()
         {
-            throw new NotImplementedException();
+            var db = Dbconexion();
+
+            var sql = @"SELECT Id ,cli_nombre, cli_cedula, cli_correo FROM [dbo].[tb_cliente]";
+
+            return await db.QueryAsync<Cliente>(sql.ToString(), new { });
         }
 
-        public Task<Cliente> GetCliente(int Id)
+        public async Task<Cliente> GetCliente(int Id)
         {
-            throw new NotImplementedException();
+            var db = Dbconexion();
+
+            var sql = @"SELECT Id ,cli_nombre, cli_cedula, cli_correo 
+                        FROM [dbo].[tb_cliente] 
+                        WHERE Id = @Id";
+
+            return await db.QueryFirstOrDefaultAsync<Cliente>(sql.ToString(), new { Id });
         }
 
         public async Task<bool> GuardarCliente(Cliente cliente)
@@ -40,23 +51,39 @@ namespace MyPyme.App.Database.Repositorios
             var sql = @"INSERT INTO [dbo].[tb_cliente] ([cli_nombre],[cli_cedula],[cli_correo])
                         VALUES(@cli_nombre, @cli_cedula, @cli_correo)";
 
-            var cli_nombre = cliente.Nombre;
-            var cli_cedula = cliente.Cedula;
-            var cli_correo = cliente.Correo;
-
-            var result = await db.ExecuteAsync(sql.ToString(), 
-                new {cli_nombre, cli_cedula, cli_correo});
+            var result = await db.ExecuteAsync(sql.ToString(),
+                new { cliente.cli_nombre, cliente.cli_cedula, cliente.cli_correo });
 
             return result > 0;
         }
 
-        public Task<bool> ModificarCliente(Cliente cliente)
+        public async Task<bool> ModificarCliente(Cliente cliente)
         {
-            throw new NotImplementedException();
+            var db = Dbconexion();
+
+            var sql = @"UPDATE [dbo].[tb_cliente]
+                        SET
+                            [cli_nombre] = @cli_nombre,
+                            [cli_cedula] = @cli_cedula,
+                            [cli_correo] = @cli_correo
+                        WHERE [Id] = @Id
+                        ";
+
+            var result = await db.ExecuteAsync(sql.ToString(),
+                new { cliente.cli_nombre, cliente.cli_cedula, cliente.cli_correo, cliente.Id });
+
+            return result > 0;
         }
-        public Task<bool> EliminarCliente(int Id)
+        public async Task<bool> EliminarCliente(int Id)
         {
-            throw new NotImplementedException();    
+            var db = Dbconexion();
+
+            var sql = @"DELETE FROM [dbo].[tb_cliente] 
+                        WHERE Id = @Id";
+
+            var result = await db.ExecuteAsync(sql.ToString(),new { Id });
+
+            return result > 0;
         }
     }
 }

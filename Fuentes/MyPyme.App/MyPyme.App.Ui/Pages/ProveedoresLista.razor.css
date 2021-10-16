@@ -1,4 +1,3 @@
-
 /* #test{
 	background-color: aquamarine;
 } */
@@ -43,7 +42,7 @@ tr{
     width: 100%;
 }
 .cabecera-lista-tr-td{
-    width: 20%;
+    width: 16.66%;
 	height : 100%;
 	color: black;
 }
@@ -86,7 +85,7 @@ tr{
 #icon1{
 	width:25%;
 	height: 100%;
-	background-image: url("iconos/icon_3.png");
+	background-image: url("iconos/icon_4.png");
 	background-repeat: no-repeat;
     background-size:50%;
     background-position: left;
@@ -134,4 +133,3 @@ table{
     width:100%;
     height:100%;
 }
-

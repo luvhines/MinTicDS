@@ -5,14 +5,13 @@ using System.Collections.Generic;
 
 using MyPyme.App.Model.Clases;
 
-namespace MyPyme.App.Database.Repositorios
+namespace MyPyme.App.Ui.Interfaces
 {
-    public interface IRepositorioProveedores
+    public interface IServicioProveedor
     {
         Task<IEnumerable<Proveedor>> GetListaProveedores();
         Task<Proveedor> GetProveedor(int Id);
         Task<bool> GuardarProveedor(Proveedor proveedor);
-        Task<bool> ModificarProveedor(Proveedor proveedor);
         Task<bool> EliminarProveedor(int Id);
     }
 }

@@ -7,9 +7,9 @@ namespace MyPyme.App.Model.Clases
     public class Cliente
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Cedula { get; set; }
-        public string Correo { get; set; }
+        public string cli_nombre { get; set; }
+        public string cli_cedula { get; set; }
+        public string cli_correo { get; set; }
         
     }
 }

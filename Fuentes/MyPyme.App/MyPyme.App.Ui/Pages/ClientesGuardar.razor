@@ -1,8 +1,10 @@
 ﻿@page "/clientesguardar"
+@page "/clientesguardar/{Id:int}"
 
 @using Model.Clases
 @using Interfaces
 @inject IServicioCliente ServicioCliente
+@inject NavigationManager Navegador
 
 <div class="cabecera_pag">
     <div class="cabecera_pag_zona1">
@@ -21,19 +23,23 @@
     <table class="table">
         <tr>
             <td><label id="lbl1" for="nombre">Nombre</label></td>
-            <td id="td2"><input type="text" @bind="cliente.Nombre"></td>
+            <td id="td2"><input type="text" @bind="cliente.cli_nombre"></td>
         </tr>
         <tr>
             <td><label id="lbl1" for="cedula">Cedula</label></td>
-            <td id="td2"><input type="text" @bind="cliente.Cedula"></td>
+            <td id="td2"><input type="text" @bind="cliente.cli_cedula"></td>
         </tr>
         <tr>
-            <td><label id="lbl1" for="correo">Correo</label></td>
-            <td id="td2"><input type="text" @bind="cliente.Correo"></td>
+            <td><label id="lbl1" type="email" for="correo">Correo</label></td>
+            <td id="td2"><input type="text" @bind="cliente.cli_correo"></td>
         </tr>
         <tr colspan="2">
-            <td><input id="lbl1" type="submit" value="Guardar" @onclick="Guardar"></td>
-            <td id="td2" ><input  type="button" value="Cancelar" @onclick="Cancelar"></td>
+            <td>
+                <input id="lbl1" type="submit" value="Guardar" @onclick="Guardar">
+            </td>
+            <td id="td2">
+                <input type="button" value="Cancelar" @onclick="Cancelar">
+            </td>
         </tr>
 
     </table>
@@ -42,16 +48,28 @@
 
 @code {
 
+    [Parameter]
+    public int Id { get; set; }
+
     Cliente cliente = new Cliente();
-
-    protected void Cancelar()
-    {
-
-    }
 
     protected async Task Guardar()
     {
         await ServicioCliente.GuardarCliente(cliente);
+        Navegador.NavigateTo("/clienteslista");
+    }
+
+    protected void Cancelar()
+    {
+        Navegador.NavigateTo("/clienteslista");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id != 0)
+        {
+            cliente = await ServicioCliente.GetCliente(Id);
+        }
     }
 
 }

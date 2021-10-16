@@ -32,6 +32,7 @@ namespace MyPyme.App.Ui
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddScoped<IServicioCliente, ServicioCliente>();
+            services.AddScoped<IServicioProveedor, ServicioProveedor>();
 
             var configuracionConexionSql = new ConfiguracionSql(Configuration.GetConnectionString("ConexionSql"));
             services.AddSingleton(configuracionConexionSql);

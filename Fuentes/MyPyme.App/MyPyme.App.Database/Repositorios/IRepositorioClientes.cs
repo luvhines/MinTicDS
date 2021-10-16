@@ -14,7 +14,5 @@ namespace MyPyme.App.Database.Repositorios
         Task<bool> GuardarCliente(Cliente cliente);
         Task<bool> ModificarCliente(Cliente cliente);
         Task<bool> EliminarCliente(int Id);
-
-
     }
 }

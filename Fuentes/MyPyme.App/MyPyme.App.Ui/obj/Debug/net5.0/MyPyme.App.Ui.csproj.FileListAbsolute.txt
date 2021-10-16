@@ -68,3 +68,10 @@
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Pages/ClientesLista.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/ClientesLista.razor.g.cs
 /home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/ClientesLista.razor.rz.scp.css
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Pages/Prueba.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/Prueba.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Componentes/ModalConfirmacion.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Componentes/ModalConfirmacion.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/RazorDeclaration/Pages/ProveedoresLista.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/Razor/Pages/ProveedoresLista.razor.g.cs
+/home/luis/Escritorio/git/MinTicDS/Fuentes/MyPyme.App/MyPyme.App.Ui/obj/Debug/net5.0/scopedcss/Pages/ProveedoresLista.razor.rz.scp.css

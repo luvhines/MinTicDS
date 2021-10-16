@@ -1,0 +1,114 @@
+@page "/proveedoreslista"
+
+@using Model.Clases
+@using Interfaces
+@using MyPyme.App.Ui.Componentes
+@inject IServicioProveedor ServicioProveedor
+@inject NavigationManager Navegador
+
+
+<div class="cabecera_pag">
+    <div class="cabecera_pag_zona1">
+        <div id="icon1"></div>
+    </div>
+    <div class="cabecera_pag_zona2">
+        <h3>Lista De Proveedores</h3>
+    </div>
+    <div class="cabecera_pag_zona3">
+        <button id="boton_home"><a id="a-home" href="/"></a></button>
+    </div>
+</div>
+
+<div id="cabecera-lista">
+    <table class="table">
+        <tr id="cabecera-lista-tr" colspan="6">
+            <td class="cabecera-lista-tr-td">NOMBRE</td>
+            <td class="cabecera-lista-tr-td">NIT</td>
+            <td class="cabecera-lista-tr-td">TELEFONO</td>
+            <td class="cabecera-lista-tr-td">DIRECCION</td>
+            <td class="cabecera-lista-tr-td">CORREO</td>
+
+            <td class="cabecera-lista-tr-td">
+                <a id="enlace-crear" href="/proveedoresguardar">
+                    <button class="btn-crear">Insertar</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+@if(proveedores == null)
+{
+    <p><i>"Cargarando..."</i></p>
+}
+else{
+    <div id="contenedor_lista">
+        <div id="contenedor_lista-lista">
+            <table class="table">
+                @foreach (Proveedor proveedor in proveedores)
+                {
+                    <tr colspan="6">
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_nit</td>
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_nombre</td>
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_telefono</td>
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_direccion</td>
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_correo</td>
+                        <td class="cabecera-lista-tr-td">
+                            <a href="/proveedoreslista" @onclick="() => AbrirModal(proveedor)"><i id="tag-crud">Borrar</i></a>
+                            <a href="/proveedoresguardar/@proveedor.Id"><i id="tag-crud">Editar</i></a>
+                            <a href="/proveedoreslista"><i id="tag-crud">Detalles</i></a>
+                        </td>
+                    </tr>
+                }
+
+            </table>
+        </div>
+    </div>
+}
+
+@if(MostrarModal)
+{
+    <ModalConfirmacion  Titulo="¿Está seguro?" 
+                        Texto="Se dispone a eliminar un Proveedor de la base de datos..."
+                        OnClose="@CerrarModal">
+
+    </ModalConfirmacion> 
+}
+
+@code {
+    private IEnumerable<Proveedor> proveedores;
+
+    private Proveedor _proveedorAborrar;
+
+    public bool MostrarModal { get; set; }
+    private async Task CerrarModal(bool aceptado)
+    {
+        if (aceptado)
+        {
+            Navegador.NavigateTo("/proveedoreslista",true);
+            await ServicioProveedor.EliminarProveedor(_proveedorAborrar.Id);
+        }
+
+        MostrarModal = false;
+        StateHasChanged();
+    }
+
+    private void AbrirModal(Proveedor proveedorAborrar)
+    {
+        _proveedorAborrar = proveedorAborrar;
+        MostrarModal = true;
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            proveedores = await ServicioProveedor.GetListaProveedores();
+        }
+        catch (System.Exception ex)
+        {
+             // TODO
+        }
+    }
+}

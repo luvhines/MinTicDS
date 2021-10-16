@@ -92,36 +92,9 @@ a[b-j2tchm9dac]{
 }
 /* _content/MyPyme.App.Ui/Pages/ClientesLista.razor.rz.scp.css */
 
-#cabecera-lista[b-vn30h4kl28]{
-    /* background-color:red; */
-    width: 99.4%;
-}
-#cabecera-lista-tr[b-vn30h4kl28]{
-    /* background-color:aquamarine; */
-    /* border-top: 2px solid; */
-    border-bottom: 2px solid;
-    border-color: rgb(192, 192, 192);
-    width: 90%;
-    font-size: 120%;
-}
-
-#contenedor_lista[b-vn30h4kl28] {
-	height: 70%;
-	width: 100%;
-	border: none;
-	background: #f1f1f1;
-	overflow-y: scroll;
-}
-#contenedor_lista-lista[b-vn30h4kl28] {
-	height: auto;
-}
-
-tr[b-vn30h4kl28]{
-    width: 100%;
-}
-.lista[b-vn30h4kl28]{
-    width: 20%;
-}
+/* #test{
+	background-color: aquamarine;
+} */
 
 .cabecera_pag[b-vn30h4kl28]{
 	height:15%;
@@ -134,6 +107,40 @@ tr[b-vn30h4kl28]{
 	align-items: center;
 	justify-content: center; 
 }
+
+#cabecera-lista[b-vn30h4kl28]{
+    width: 99.4%;
+}
+#cabecera-lista-tr[b-vn30h4kl28]{
+    border-bottom: 2px solid;
+    border-color: rgb(192, 192, 192);
+    width: 90%;
+	height:100%;
+    font-size: 120%;
+	margin-bottom:0;
+}
+
+#contenedor_lista[b-vn30h4kl28] {
+
+	height: 70%;
+	width: 100%;
+	border: none;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-vn30h4kl28] {
+	height: 100%;
+}
+
+tr[b-vn30h4kl28]{
+    width: 100%;
+}
+.cabecera-lista-tr-td[b-vn30h4kl28]{
+    width: 20%;
+	height : 100%;
+	color: black;
+}
+
 
 .cabecera_pag_zona1[b-vn30h4kl28]{
 	width:33.33%;
@@ -187,7 +194,7 @@ tr[b-vn30h4kl28]{
 
 table[b-vn30h4kl28]{
     margin-bottom: 0;
-
+    margin-top: 0;
     background-color: #ffffff;
     text-align:center;
 }
@@ -199,9 +206,12 @@ table[b-vn30h4kl28]{
 
 .btn-crear[b-vn30h4kl28]{
     outline: none;
+	border:none;
     padding-top: 0;
     padding-bottom: 0;
+	padding-top: 5px;
     width:55%;
+	height: 100%;
     background-color: rgb(169, 155, 248);
     border-radius:8px;
     transition-duration: 0.2s;
@@ -209,7 +219,7 @@ table[b-vn30h4kl28]{
 }
 .btn-crear:hover[b-vn30h4kl28]{
     transition-duration: 0.2s;
-    width:70%;
+    width:60%;
     background-color: rgb(125, 104, 243);
 }
 
@@ -381,6 +391,142 @@ a[b-9qfm7bbzud]{
 
 #lbl1[b-9qfm7bbzud]{
 	margin-left: 30%;
+}
+/* _content/MyPyme.App.Ui/Pages/ProveedoresLista.razor.rz.scp.css */
+/* #test{
+	background-color: aquamarine;
+} */
+
+.cabecera_pag[b-4v85t4v7l6]{
+	height:15%;
+	width: 100%;
+	border: 2px solid rgb(134, 112, 255);
+    background-color: rgb(169, 155, 248);
+	border-radius: 30px;
+	margin-bottom: 20px;
+	display:flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+#cabecera-lista[b-4v85t4v7l6]{
+    width: 99.4%;
+}
+#cabecera-lista-tr[b-4v85t4v7l6]{
+    border-bottom: 2px solid;
+    border-color: rgb(192, 192, 192);
+    width: 90%;
+	height:100%;
+    font-size: 120%;
+	margin-bottom:0;
+}
+
+#contenedor_lista[b-4v85t4v7l6] {
+
+	height: 70%;
+	width: 100%;
+	border: none;
+	background: #f1f1f1;
+	overflow-y: scroll;
+}
+#contenedor_lista-lista[b-4v85t4v7l6] {
+	height: 100%;
+}
+
+tr[b-4v85t4v7l6]{
+    width: 100%;
+}
+.cabecera-lista-tr-td[b-4v85t4v7l6]{
+    width: 16.66%;
+	height : 100%;
+	color: black;
+}
+
+
+.cabecera_pag_zona1[b-4v85t4v7l6]{
+	width:33.33%;
+	height:100%;
+	text-align:center;
+}
+
+.cabecera_pag_zona2[b-4v85t4v7l6]{
+	width:33.33%;
+	text-align:center;
+}
+.cabecera_pag_zona2_icon[b-4v85t4v7l6]{
+	height: 100%;
+	width: 100%;
+}
+
+.cabecera_pag_zona3[b-4v85t4v7l6]{
+	width:33.33%;
+	height: 100%;
+	text-align:right;
+}
+#boton_home[b-4v85t4v7l6]{
+	width: 25%;
+	height: 100%;
+	border:none;
+    outline: none;
+	border-radius:30px;
+	background-color: rgb(169, 155, 248);
+	background-image: url("iconos/icon_11.png");
+	background-repeat: no-repeat;
+    background-size:50%;
+    background-position: left;
+	margin-right: 15%;
+}
+
+#icon1[b-4v85t4v7l6]{
+	width:25%;
+	height: 100%;
+	background-image: url("iconos/icon_4.png");
+	background-repeat: no-repeat;
+    background-size:50%;
+    background-position: left;
+	margin-left: 15%;
+}
+
+#a-home[b-4v85t4v7l6]{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+table[b-4v85t4v7l6]{
+    margin-bottom: 0;
+    margin-top: 0;
+    background-color: #ffffff;
+    text-align:center;
+}
+
+#tag-crud[b-4v85t4v7l6]{
+
+   padding-left: 8px;;
+}
+
+.btn-crear[b-4v85t4v7l6]{
+    outline: none;
+	border:none;
+    padding-top: 0;
+    padding-bottom: 0;
+	padding-top: 5px;
+    width:55%;
+	height: 100%;
+    background-color: rgb(169, 155, 248);
+    border-radius:8px;
+    transition-duration: 0.2s;
+    
+}
+.btn-crear:hover[b-4v85t4v7l6]{
+    transition-duration: 0.2s;
+    width:60%;
+    background-color: rgb(125, 104, 243);
+}
+
+#enlace-crear[b-4v85t4v7l6]{
+    width:100%;
+    height:100%;
 }
 /* _content/MyPyme.App.Ui/Shared/MainLayout.razor.rz.scp.css */
 *[b-l4h2y166dl]{

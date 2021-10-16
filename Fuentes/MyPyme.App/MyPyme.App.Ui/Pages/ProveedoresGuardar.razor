@@ -1,8 +1,10 @@
 ﻿@page "/proveedoresguardar"
+@page "/proveedoresguardar/{Id:int}"
 
 @using Model.Clases
 @using Interfaces
-@inject IServicioCliente ServicioCliente
+@inject IServicioProveedor ServicioProveedor
+@inject NavigationManager Navegador
 
 <div class="cabecera_pag">
     <div class="cabecera_pag_zona1">
@@ -16,103 +18,67 @@
     </div>
 </div>
 
-@* <div id="contenedor_lista">
-    <div id="contenedor_lista-lista"> 
-    <ul class="list-group list-group-flush">
-    @for (var i = 0; i < 50; i++)
-    {
-    <li class="list-group-item">Esto es un elemento @i</li>
-    }
-    </ul>
-    </div>
-    </div>
-
-    <p id="parrafo">Esto es un texto</p>
-
-    <ul class="lista">
-    <li>Esto es una lista</li>
-    <li>Elemento 1</li>
-    <li>Elemento 2</li>
-    <li>Elemento 3</li>
-    </ul> *@
-
 <EditForm Model="proveedor"> 
 
     <table class="table">
         <tr>
             <td ><label id="lbl1" for="NIT">NIT</label></td>
-            <td id="td2"><input type="text" @bind="proveedor.Nit"></td>
+            <td id="td2"><input type="text" @bind="proveedor.pvd_nit"></td>
         </tr>
         <tr>
             <td ><label id="lbl1"  for="Nombre Proveedor">Nombre</label></td>
-            <td id="td2"><input type="text" @bind="proveedor.Nombre"></td>
+            <td id="td2"><input type="text" @bind="proveedor.pvd_nombre"></td>
         </tr>
         <tr>
             <td ><label id="lbl1"  for="Telefono">Telefono</label></td>
-            <td id="td2"><input type="text" @bind="proveedor.Telefono"></td>
+            <td id="td2"><input type="text" @bind="proveedor.pvd_telefono"></td>
         </tr>
 
         <tr> 
             <td ><label id="lbl1" for="Direccion">Direccion</label></td>
-            <td id="td2"><input type="text" @bind="proveedor.Direccion"></td>
+            <td id="td2"><input type="text" @bind="proveedor.pvd_direccion"></td>
         </tr>
         <tr>
-            <td><label id="lbl1"  for="Correo">Correo</label></td>
-            <td id="td2"><input type="text" @bind="proveedor.Correo"></td>
+            <td><label id="lbl1" type="email" for="Correo">Correo</label></td>
+            <td id="td2"><input type="text" @bind="proveedor.pvd_correo"></td>
         </tr>
 
         <tr colspan="2" style="text-align: center">
             <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
-            <td id="td2"><input type="button" value="Cancelar" @onclick="Cancelar"></td>
+            <td id="td2">
+                <a href="/"><input type="submit" value="Cancelar" @onclick="Cancelar"></a>
+            </td>
         </tr>
 
     </table>
-
+ 
 </EditForm>
-
-
-@* <form>
-  <div class="row mb-3">
-    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail3">
-    </div>
-  </div>
-  <div class="row mb-3">
-    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control" id="inputPassword3">
-    </div>
-  </div>
-     <div class="col-sm-10">
-       <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-</form> *@
-
-
-@* Este boton tiene etiquetas de booostrap *@
-@* <a href="/">
-    <button type="button" class="btn btn-lg btn-primary">Touchme</button>
-</a> *@
 
 
 @code {
 
+    [Parameter]
+    public int Id { get; set; }
+
     Proveedor proveedor = new Proveedor();
+
+    protected async Task Guardar()
+    {
+        await ServicioProveedor.GuardarProveedor(proveedor);
+        Navegador.NavigateTo("/proveedoreslista");
+    }
 
     protected void Cancelar()
     {
-
+        Navegador.NavigateTo("/proveedoreslista");
     }
-    protected void Guardar()
+
+    protected override async Task OnInitializedAsync()
     {
-
+        if (Id != 0)
+        {
+            proveedor = await ServicioProveedor.GetProveedor(Id);
+        }
     }
-
-    /*protected async Task Guardar()
-    {
-        await ServicioCliente.GuardarCliente(cliente);
-    }
-    */
 
 }

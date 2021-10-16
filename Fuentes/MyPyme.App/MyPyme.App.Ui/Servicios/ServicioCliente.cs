@@ -24,12 +24,12 @@ namespace MyPyme.App.Ui.Servicios
 
         public Task<IEnumerable<Cliente>> GetListaClientes()
         {
-            throw new NotImplementedException();
+            return _repositorioClientes.GetListaClientes();
         }
 
         public Task<Cliente> GetCliente(int Id)
         {
-            throw new NotImplementedException();
+            return _repositorioClientes.GetCliente(Id);
         }
 
         public Task<bool> GuardarCliente(Cliente cliente)
@@ -40,13 +40,13 @@ namespace MyPyme.App.Ui.Servicios
            }
            else
            {
-               return null;
+               return _repositorioClientes.ModificarCliente(cliente);
            } 
         }
 
         public Task<bool> EliminarCliente(int Id)
         {
-            throw new NotImplementedException();    
+            return _repositorioClientes.EliminarCliente(Id);
         }
     }
 }
