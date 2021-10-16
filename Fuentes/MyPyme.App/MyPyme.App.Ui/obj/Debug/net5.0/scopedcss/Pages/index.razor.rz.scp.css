@@ -1,54 +1,19 @@
-<<<<<<< HEAD
-.contenido[b-io3sryghfg]{
-=======
 .contenido[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     display: block;
     height: 100%;
 }
 
-<<<<<<< HEAD
-.tabla[b-io3sryghfg]{
-    width: 100%;
-=======
 .tabla[b-kvso3n0ass]{
     width: 100%; 
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     height: 100%;
     text-align: center;
 }
 
-<<<<<<< HEAD
-td[b-io3sryghfg]{
-=======
 td[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     height: 40%;
     width: 33.3%;  
 }
 
-<<<<<<< HEAD
-#icon_2[b-io3sryghfg]{
-    background-image: url("iconos/icon_2.png");
-}
-#icon_3[b-io3sryghfg]{
-    background-image: url("iconos/icon_3.png");
-}
-#icon_4[b-io3sryghfg]{
-    background-image: url("iconos/icon_4.png");
-}
-#icon_5[b-io3sryghfg]{
-    background-image: url("iconos/icon_5.png");
-}
-#icon_6[b-io3sryghfg]{
-    background-image: url("iconos/icon_6.png");
-}
-#icon_7[b-io3sryghfg]{
-    background-image: url("iconos/icon_7.png");
-}
-
-.btnNav[b-io3sryghfg]{
-=======
 #icon_2[b-kvso3n0ass]{
     background-image: url("iconos/icon_2.png");
 }
@@ -69,7 +34,6 @@ td[b-kvso3n0ass]{
 }
 
 .btnNav[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     outline: none;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
@@ -81,39 +45,22 @@ td[b-kvso3n0ass]{
     background-position: center;
     transition-duration: 0.2s;
 }
-<<<<<<< HEAD
-.btnNav:hover[b-io3sryghfg]{
-=======
 .btnNav:hover[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     transition-duration: 0.2s;
     background-color: rgb(134, 112, 255);
     width: 60%;
     height: 80%;
 }
-<<<<<<< HEAD
-.btnNav:active[b-io3sryghfg]{
-=======
 .btnNav:active[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     transition-duration: 0.3s;
     border: -5px;
     border-color: rgb(232, 230, 240);
 }
 
-<<<<<<< HEAD
-#etiqueta_btn[b-io3sryghfg]{
-=======
 #etiqueta_btn[b-kvso3n0ass]{
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
     padding: 0;
     margin: 0;
     height: 2%; 
     color: rgb(134, 112, 255);
     font-size: 120%; 
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 034baa2a484ed7b515476dc6e758f67e1d7ab8de
