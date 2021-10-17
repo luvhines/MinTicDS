@@ -1,0 +1,112 @@
+CREATE TABLE tb_empresa
+(
+    Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    emp_nit VARCHAR(50) NOT NULL,
+    emp_nombre VARCHAR(50) NOT NULL,
+    emp_direccion VARCHAR(50) NOT NULL,
+    emp_telefono VARCHAR(50) NOT NULL
+)
+
+CREATE TABLE tb_empleado
+(
+    Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    emd_nombre VARCHAR(50) NOT NULL,
+    emd_apellido VARCHAR(50) NOT NULL,
+    emd_direccion VARCHAR(50),
+    emd_celular VARCHAR(50) NOT NULL,
+    emd_correo VARCHAR(50),
+    emd_cedula VARCHAR(50) NOT NULL,
+    emd_genero VARCHAR(50) NOT NULL,
+    emd_eps VARCHAR(50) NOT NULL,
+    emd_arl VARCHAR(50) NOT NULL,
+    emd_salario DECIMAL(20,2) NOT NULL
+)
+
+CREATE TABLE tb_proveedor
+(
+    Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    pvd_nit VARCHAR(50) NOT NULL,
+    pvd_nombre VARCHAR(50) NOT NULL,
+    pvd_telefono VARCHAR(50) NOT NULL,
+    pvd_direccion VARCHAR(50),
+    pvd_correo VARCHAR(50),
+)
+
+CREATE TABLE tb_cliente
+(
+    Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    cli_nombre VARCHAR(50) NOT NULL,
+    cli_cedula VARCHAR(50) NOT NULL,
+    cli_correo VARCHAR(50) NOT NULL,
+)
+
+CREATE TABLE tb_producto
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    pro_nombre VARCHAR(50) NOT NULL,
+    pro_codigo VARCHAR(50) NOT NULL,
+    pro_valor_unitario DECIMAL(10,2) NOT NULL,
+    pro_cantidad INT NOT NULL
+)
+
+CREATE TABLE tb_pqrs
+(
+    Id int IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    pqrs_tipo_reclamo VARCHAR(50) NOT NULL,
+    pqrs_cedula_usuario VARCHAR(50) NOT NULL,
+    pqrs_fecha_registro DATE NOT NULL,
+    pqrs_fk_cliente INT NOT NULL,
+    FOREIGN KEY (pqrs_fk_cliente) REFERENCES tb_cliente(Id)
+)
+
+CREATE TABLE tb_factura_compra
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    facc_numero_factura INT NOT NULL,
+    facc_fecha_compra DATE NOT NULL,
+    facc_fecha_vencimiento DATE,
+    facc_total DECIMAL(20,2) NOT NULL,
+    facc_fk_proveedor INT NOT NULL,
+    FOREIGN KEY (facc_fk_proveedor) REFERENCES tb_proveedor(Id)
+)
+
+CREATE TABLE tb_compra_producto
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    com_pro_cantidad INT NOT NULL,
+    com_pro_valor DECIMAL(20,2) NOT NULL,
+    com_pro_iva DECIMAL(20,2) NOT NULL,
+    com_pro_fk_facc INT NOT NULL,
+    com_pro_fk_producto INT NOT NULL,
+    FOREIGN KEY (com_pro_fk_facc) REFERENCES tb_factura_compra(Id),
+    FOREIGN KEY (com_pro_fk_producto) REFERENCES tb_producto(Id)
+)
+
+CREATE TABLE tb_factura_venta
+(      
+
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    facv_numero_factura INT NOT NULL,
+    facv_fecha_venta DATE NOT NULL,
+    facv_fecha_vencimiento DATE,
+    facv_total DECIMAL(20,2) NOT NULL,
+    facv_fk_cliente INT NOT NULL,
+    facv_fk_empresa INT NOT NULL,
+    facv_fk_empleado INT NOT NULL,
+    FOREIGN KEY (facv_fk_cliente) REFERENCES tb_cliente(Id),
+    FOREIGN KEY (facv_fk_empresa) REFERENCES tb_empresa(Id),
+    FOREIGN KEY (facv_fk_empleado) REFERENCES tb_empleado(Id)
+) 
+
+
+CREATE TABLE tb_venta_producto
+(
+    Id INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    ven_pro_cantidad INT NOT NULL,
+    ven_pro_valor DECIMAL(20,2) NOT NULL,
+    ven_pro_iva DECIMAL(20,2) NOT NULL,
+    ven_pro_fk_facv INT NOT NULL,
+    ven_pro_fk_producto INT NOT NULL,
+    FOREIGN KEY (ven_pro_fk_facv) REFERENCES tb_factura_venta(Id),
+    FOREIGN KEY (ven_pro_fk_producto) REFERENCES tb_producto(Id)
+) 
