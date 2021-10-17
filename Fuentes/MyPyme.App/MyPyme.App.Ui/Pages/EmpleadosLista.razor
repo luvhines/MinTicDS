@@ -1,9 +1,9 @@
-@page "/clienteslista"
+@page "/empleadoslista"
 
 @using Model.Clases
 @using Interfaces
 @using MyPyme.App.Ui.Componentes
-@inject IServicioCliente ServicioCliente
+@inject IServicioEmpleado ServicioEmpleado
 @inject NavigationManager Navegador
 
 
@@ -12,7 +12,7 @@
         <div id="icon1"></div>
     </div>
     <div class="cabecera_pag_zona2">
-        <h3>Lista De Clientes</h3>
+        <h3>Lista de Empleados</h3>
     </div>
     <div class="cabecera_pag_zona3">
         <button id="boton_home"><a id="a-home" href="/"></a></button>
@@ -21,12 +21,13 @@
 
 <div id="cabecera-lista">
     <table class="table">
-        <tr id="cabecera-lista-tr" colspan="4">
+        <tr id="cabecera-lista-tr" colspan="5">
             <td class="cabecera-lista-tr-td">NOMBRE</td>
-            <td class="cabecera-lista-tr-td">CEDULA</td>
+            <td class="cabecera-lista-tr-td">APELLIDO</td>
+            <td class="cabecera-lista-tr-td">IDENTIFICACION</td>
             <td class="cabecera-lista-tr-td">CORREO</td>
             <td class="cabecera-lista-tr-td">
-                <a id="enlace-crear" href="/clientesguardar">
+                <a id="enlace-crear" href="/empleadosguardar">
                     <button class="btn-crear">Insertar</button>
                 </a>
             </td>
@@ -34,7 +35,7 @@
     </table>
 </div>
 
-@if(clientes == null)
+@if(empleados == null)
 {
     <p><i>"Cargando..."</i></p>
 }
@@ -42,21 +43,20 @@ else{
     <div id="contenedor_lista">
         <div id="contenedor_lista-lista">
             <table class="table">
-                @foreach (Cliente cliente in clientes)
+                @foreach (Empleado empleado in empleados)
                 {
-                    <tr colspan="4">
-                        <td class="cabecera-lista-tr-td">@cliente.cli_nombre</td>
-                        <td class="cabecera-lista-tr-td">@cliente.cli_cedula</td>
-                        <td class="cabecera-lista-tr-td">@cliente.cli_correo</td>
+                    <tr colspan="5">
+                        <td class="cabecera-lista-tr-td">@empleado.emd_nombre</td>
+                        <td class="cabecera-lista-tr-td">@empleado.emd_apellido</td>
+                        <td class="cabecera-lista-tr-td">@empleado.emd_cedula</td>
+                        <td class="cabecera-lista-tr-td">@empleado.emd_correo</td>
                         <td class="cabecera-lista-tr-td">
-                            <a href="/clienteslista" @onclick="() => AbrirModal(cliente)">
-                                <i id="tag-crud">Borrar</i>
-                            </a>
-                            <a href="/clientesguardar/@cliente.Id"><i id="tag-crud">Editar</i></a>
-                            <a href="/clienteslista"><i id="tag-crud">Detalles</i></a>
+                            <a href="/empleadoslista" @onclick="() => AbrirModal(empleado)"><i id="tag-crud">Borrar</i></a>
+                            <a href="/empleadosguardar/@empleado.Id"><i id="tag-crud">Editar</i></a>
+                            <a href="/empleadoslista"><i id="tag-crud">Detalles</i></a>
                         </td>
                     </tr>
-                }
+                } 
 
             </table>
         </div>
@@ -66,47 +66,42 @@ else{
 @if(MostrarModal)
 {
     <ModalConfirmacion  Titulo="¿Está seguro?" 
-                        Texto="Se dispone a eliminar un Cliente de la base de datos..."
+                        Texto="Se dispone a eliminar un Empleado de la base de datos..."
                         OnClose="@CerrarModal">
 
     </ModalConfirmacion> 
 }
 
 @code {
-    private IEnumerable<Cliente> clientes;
+    private IEnumerable<Empleado> empleados;
 
-    private Cliente _clienteAborrar;
+    private Empleado _empleadoAborrar;
     public bool MostrarModal { get; set; }
     private async Task CerrarModal(bool aceptado)
     {
         if (aceptado)
         {
             @* Navegador.NavigateTo("/"); *@
-            Navegador.NavigateTo("/clienteslista",true);
-            await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
+            Navegador.NavigateTo("/empleadoslista",true);
+            await ServicioEmpleado.EliminarEmpleado(_empleadoAborrar.Id);
         }
 
         MostrarModal = false;
         StateHasChanged();
     }
 
-    private void AbrirModal(Cliente clienteAborrar)
+    private void AbrirModal(Empleado empleadoAborrar)
     {
-        _clienteAborrar = clienteAborrar;
+        _empleadoAborrar = empleadoAborrar;
         MostrarModal = true;
         StateHasChanged();
     }
-
-    @* protected async Task BorrarCliente()
-    {
-        await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
-    } *@
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            clientes= await ServicioCliente.GetListaClientes();
+            empleados= await ServicioEmpleado.GetListaEmpleados();
         }
         catch (System.Exception ex)
         {

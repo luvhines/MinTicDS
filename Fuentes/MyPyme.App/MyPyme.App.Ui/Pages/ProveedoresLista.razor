@@ -39,7 +39,7 @@
 
 @if(proveedores == null)
 {
-    <p><i>"Cargarando..."</i></p>
+    <p><i>"Cargando..."</i></p>
 }
 else{
     <div id="contenedor_lista">
@@ -48,8 +48,8 @@ else{
                 @foreach (Proveedor proveedor in proveedores)
                 {
                     <tr colspan="6">
-                        <td class="cabecera-lista-tr-td">@proveedor.pvd_nit</td>
                         <td class="cabecera-lista-tr-td">@proveedor.pvd_nombre</td>
+                        <td class="cabecera-lista-tr-td">@proveedor.pvd_nit</td>
                         <td class="cabecera-lista-tr-td">@proveedor.pvd_telefono</td>
                         <td class="cabecera-lista-tr-td">@proveedor.pvd_direccion</td>
                         <td class="cabecera-lista-tr-td">@proveedor.pvd_correo</td>

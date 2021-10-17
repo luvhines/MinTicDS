@@ -1,0 +1,103 @@
+﻿@page "/empleadosguardar"
+@page "/empleadosguardar/{Id:int}"
+
+@using Model.Clases
+@using Interfaces
+@inject IServicioEmpleado ServicioEmpleado
+@inject NavigationManager Navegador
+
+
+<div class="cabecera_pag">
+    <div class="cabecera_pag_zona1">
+        <div id="icon2"></div>
+    </div>
+    <div class="cabecera_pag_zona2">
+        <h3>Empleados</h3>
+    </div>
+    <div class="cabecera_pag_zona3">
+        <button id="boton_home"><a href="/"></a></button>
+    </div>
+</div>
+
+<EditForm Model="empleado">
+
+    <table class="table">
+        <tr>
+            <td><label for="Cedula">Cedula</label></td>
+            <td><input type="text" @bind="empleado.emd_cedula"></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td><label for="Nombre Empleado">Nombre</label></td>
+            <td><input type="text" placeholder="Digite Nombre " @bind="empleado.emd_nombre"></td>
+            <td><label for="Apellido Empleado">Apellido</label></td>
+            <td><input type="text" placeholder="Digite Apellidos" @bind="empleado.emd_apellido"></td>
+        </tr>
+
+        <tr>
+            <td><label for="Direccion Empleado">Direccion</label></td>
+            <td><input type="text"  @bind="empleado.emd_direccion"></td>
+            <td><label for="Celular Empleado">Celular</label></td>
+            <td><input type="text" @bind="empleado.emd_celular"></td>
+        </tr>
+        <tr>
+            <td><label for="Correo Empleado">Correo</label></td>
+            <td><input type="text" @bind="empleado.emd_correo"></td>
+            <td><label for="Genero Empleado">Genero</label></td>
+            <td><input type="text" @bind="empleado.emd_genero"></td>
+        </tr>
+
+        <tr>
+            <td><label for="Eps Empleado">Eps</label></td>
+            <td><input type="text" @bind="empleado.emd_eps"></td>
+            <td><label for="Arl Empleado">Arl</label></td>
+            <td><input type="text"  @bind="empleado.emd_arl"></td>
+        </tr>
+         <tr>
+            <td><label for="Salario Empleado">Salario</label></td>
+            <td><input type="text"  @bind="empleado.emd_salario"></td>
+            <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
+            <td><input type="button" value="Cancelar" @onclick="Cancelar"></td>
+        </tr>
+
+        @* <tr colspan="2" style="text-align: center">
+            <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
+            <td><input type="button" value="Cancelar" @onclick="Cancelar"></td>
+        </tr> *@
+
+    </table>
+
+</EditForm>
+
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    Empleado empleado = new Empleado();
+
+    protected async Task Guardar()
+    {
+        await ServicioEmpleado.GuardarEmpleado(empleado);
+        Navegador.NavigateTo("/empleadoslista");
+    }
+
+    protected void Cancelar()
+    {
+        Navegador.NavigateTo("/empleadoslista");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id != 0)
+        {
+            empleado = await ServicioEmpleado.GetEmpleado(Id);
+        }
+    }
+
+}
+
+

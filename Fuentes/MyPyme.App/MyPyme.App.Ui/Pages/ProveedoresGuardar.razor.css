@@ -92,5 +92,10 @@ a{
 }
 
 #lbl1{
-	margin-left: 30%;
+	/*margin-left: 30%*/
 }
+
+td{
+	padding-left: 3%;
+}
+

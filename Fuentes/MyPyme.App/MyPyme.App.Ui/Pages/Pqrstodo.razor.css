@@ -61,17 +61,17 @@
     background-color: rgb(169, 155, 248);
     background-image: url("iconos/icon_11.png");
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 50%;
     background-position: left;
     margin-right: 15%;
 }
 
-#icon2 {
+#icon5 {
     width: 25%;
     height: 100%;
-    background-image: url("iconos/icon_2.png");
+    background-image: url("iconos/icon_7.png");
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 50%;
     background-position: left;
     margin-left: 15%;
 }
@@ -88,4 +88,8 @@ a {
 
 .btn {
     text-align: center;
+}
+
+td{
+    padding-left: 3%;
 }
