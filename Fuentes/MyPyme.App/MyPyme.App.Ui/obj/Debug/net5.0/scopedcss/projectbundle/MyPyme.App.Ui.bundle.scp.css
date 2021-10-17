@@ -233,16 +233,6 @@ table[b-vn30h4kl28]{
     height:100%;
 }
 
-<<<<<<< HEAD
-/* _content/MyPyme.App.Ui/Pages/index.razor.rz.scp.css */
-.contenido[b-kvso3n0ass]{
-    display: block;
-    height: 100%;
-}
-
-.tabla[b-kvso3n0ass]{
-    width: 100%; 
-=======
 /* _content/MyPyme.App.Ui/Pages/EmpleadosGuardar.razor.rz.scp.css */
 #contenedor_lista[b-uegk4k4ck1] {
     height: 50%;
@@ -279,20 +269,10 @@ table[b-vn30h4kl28]{
 
 .cabecera_pag_zona1[b-uegk4k4ck1] {
     width: 33.33%;
->>>>>>> Luis
     height: 100%;
     text-align: center;
 }
 
-<<<<<<< HEAD
-td[b-kvso3n0ass]{
-    height: 40%;
-    width: 33.3%;  
-}
-
-#icon_2[b-kvso3n0ass]{
-    background-image: url("iconos/icon_2.png");
-=======
 .cabecera_pag_zona2[b-uegk4k4ck1] {
     width: 33.33%;
     text-align: center;
@@ -484,7 +464,6 @@ table[b-w8xyiviwj7]{
 #enlace-crear[b-w8xyiviwj7]{
     width:100%;
     height:100%;
->>>>>>> Luis
 }
 
 /* _content/MyPyme.App.Ui/Pages/Index.razor.rz.scp.css */
@@ -528,11 +507,7 @@ td[b-kvso3n0ass] {
     background-image: url("iconos/icon_7.png");
 }
 
-<<<<<<< HEAD
-.btnNav[b-kvso3n0ass]{
-=======
 .btnNav[b-kvso3n0ass] {
->>>>>>> Luis
     outline: none;
     border: 2px solid rgb(134, 112, 255);
     background-color: rgb(169, 155, 248);
@@ -544,41 +519,27 @@ td[b-kvso3n0ass] {
     background-position: center;
     transition-duration: 0.2s;
 }
-<<<<<<< HEAD
-.btnNav:hover[b-kvso3n0ass]{
-=======
 
 .btnNav:hover[b-kvso3n0ass] {
->>>>>>> Luis
     transition-duration: 0.2s;
     background-color: rgb(134, 112, 255);
     width: 60%;
     height: 80%;
 }
-<<<<<<< HEAD
-.btnNav:active[b-kvso3n0ass]{
-=======
 
 .btnNav:active[b-kvso3n0ass] {
->>>>>>> Luis
     transition-duration: 0.3s;
     border: -5px;
     border-color: rgb(232, 230, 240);
 }
 
-<<<<<<< HEAD
-#etiqueta_btn[b-kvso3n0ass]{
-=======
 #etiqueta_btn[b-kvso3n0ass] {
->>>>>>> Luis
     padding: 0;
     margin: 0;
     height: 2%;
     color: rgb(134, 112, 255);
     font-size: 120%; 
 }
-<<<<<<< HEAD
-=======
 /* _content/MyPyme.App.Ui/Pages/PaginaTEST.razor.rz.scp.css */
 #contenedorboton[b-ca6yzdbuvw] {
     outline: none;
@@ -937,7 +898,6 @@ table[b-pea9dbfvuz]{
     height:100%;
 }
 
->>>>>>> Luis
 /* _content/MyPyme.App.Ui/Pages/ProveedoresGuardar.razor.rz.scp.css */
 #contenedor_lista[b-9qfm7bbzud] {
 	height: 50%;
