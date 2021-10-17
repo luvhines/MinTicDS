@@ -1,0 +1,112 @@
+﻿@page "/productosguardar"
+@page "/productosguardar/{Id:int}"
+
+@using Model.Clases
+@using Interfaces
+@inject IServicioProducto ServicioProducto
+@inject IServicioProveedor ServicioProveedor
+@inject NavigationManager Navegador
+
+
+<div class="cabecera_pag">
+    <div class="cabecera_pag_zona1">
+        <div id="icon1"></div>
+    </div>
+    <div class="cabecera_pag_zona2">
+        <h3>Registro de Producto</h3>
+    </div>
+    <div class="cabecera_pag_zona3">
+        <button id="boton_home"><a href="/"></a></button>
+    </div>
+</div>
+
+<EditForm Model="producto">
+
+    <table class="table">
+
+        <tr>
+            <td><label for="Codigo">Codigo</label></td>
+            <td><input type="text" @bind="producto.pro_codigo"></td>
+            <td><label for="NumFactura">Numero de Factura</label></td>
+            <td><input type="text"></td>
+
+        </tr>
+        <tr>
+            <td><label for="Nombre Producto">Nombre: </label></td>
+            <td><input type="text" placeholder="Producto" @bind="producto.pro_nombre"></td>
+            <td><label for="FechaCompra">Fecha Compra</label></td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td><label for="ValorUnitario">Valor Unitario</label></td>
+            <td><input type="text" placeholder="" @bind="producto.pro_valor_unitario"></td>
+            <td><label for="FechaVence">Fecha Vence</label></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="Cantidad">Cantidad</label></td>
+            <td><input type="text" @bind="producto.pro_cantidad"></td>
+            <td><label for="Total">Total :</label></td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr colspan="4">
+            <td><input type="submit" value="Guardar" @onclick="Guardar"></td>
+            <td><input type="button" value="Cancelar" @onclick="Cancelar"></td>
+            <td><label for="Proveedor">Proveedor :</label></td>
+            <td>
+                @*<input type="text" >*@
+
+                <input list="proveedoresLista" name="proveedorsLista">
+                <datalist id="proveedoresLista">
+                    @if (proveedores != null)
+                    {
+                        foreach (Proveedor proveedor in proveedores)
+                        {
+                            <option value=@proveedor.pvd_nombre></option>
+                        }    
+                    }
+                </datalist>
+
+            </td>
+        </tr>
+    </table>
+</EditForm>
+
+@code {
+
+    [Parameter]
+    public int Id { get; set; }
+
+    Producto producto = new Producto();
+    public IEnumerable<Proveedor> proveedores;
+        
+    protected async Task Guardar()
+    {
+        await ServicioProducto.GuardarProducto(producto);
+        Navegador.NavigateTo("/productoslista");
+    }
+
+    protected void Cancelar()
+    {
+        Navegador.NavigateTo("/productoslista");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            if (Id != 0)
+            {
+                producto = await ServicioProducto.GetProducto(Id);
+            }
+            proveedores = await ServicioProveedor.GetListaProveedores();
+        }
+        catch (System.Exception ex)
+        {
+            // TODO
+        }
+    }
+
+}

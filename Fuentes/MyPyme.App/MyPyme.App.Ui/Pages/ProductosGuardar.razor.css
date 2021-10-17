@@ -57,7 +57,7 @@
 #icon1{
 	width:25%;
 	height: 100%;
-	background-image: url("iconos/icon_3.png");
+	background-image: url("iconos/icon_5.png");
 	background-repeat: no-repeat;
     background-size:50%;
     background-position: left;
@@ -85,10 +85,9 @@ a{
 }
 
 #lbl1{
-	/*margin-left: 30%;*/
+	margin-left: 30%;
 }
 
 td{
 	padding-left: 3%;
 }
-

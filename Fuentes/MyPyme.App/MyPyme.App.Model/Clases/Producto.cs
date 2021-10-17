@@ -7,10 +7,10 @@ namespace MyPyme.App.Model.Clases
     public class Producto
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
-        public string Codigo { get; set; }
-        public double ValorUnitario { get; set; }
-        public int Cantidad { get; set; }
+        public string pro_nombre { get; set; }
+        public string pro_codigo { get; set; }
+        public double pro_valor_unitario { get; set; }
+        public int pro_cantidad { get; set; }
 
     }
 }

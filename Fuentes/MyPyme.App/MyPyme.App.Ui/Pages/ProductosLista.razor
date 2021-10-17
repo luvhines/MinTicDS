@@ -1,9 +1,9 @@
-@page "/clienteslista"
+@page "/productoslista"
 
 @using Model.Clases
 @using Interfaces
 @using MyPyme.App.Ui.Componentes
-@inject IServicioCliente ServicioCliente
+@inject IServicioProducto ServicioProducto 
 @inject NavigationManager Navegador
 
 
@@ -12,7 +12,7 @@
         <div id="icon1"></div>
     </div>
     <div class="cabecera_pag_zona2">
-        <h3>Lista De Clientes</h3>
+        <h3>Lista de Produtos</h3>
     </div>
     <div class="cabecera_pag_zona3">
         <button id="boton_home"><a id="a-home" href="/"></a></button>
@@ -21,12 +21,13 @@
 
 <div id="cabecera-lista">
     <table class="table">
-        <tr id="cabecera-lista-tr" colspan="4">
+        <tr id="cabecera-lista-tr" colspan="5">
+            <td class="cabecera-lista-tr-td">CÓDIGO</td>
             <td class="cabecera-lista-tr-td">NOMBRE</td>
-            <td class="cabecera-lista-tr-td">CEDULA</td>
-            <td class="cabecera-lista-tr-td">CORREO</td>
+            <td class="cabecera-lista-tr-td">VALOR</td>
+            <td class="cabecera-lista-tr-td">CANTIDAD</td>
             <td class="cabecera-lista-tr-td">
-                <a id="enlace-crear" href="/clientesguardar">
+                <a id="enlace-crear" href="/productosguardar">
                     <button class="btn-crear">Insertar</button>
                 </a>
             </td>
@@ -34,7 +35,7 @@
     </table>
 </div>
 
-@if(clientes == null)
+@if(productos == null)
 {
     <p><i>"Cargando..."</i></p>
 }
@@ -42,18 +43,19 @@ else{
     <div id="contenedor_lista">
         <div id="contenedor_lista-lista">
             <table class="table">
-                @foreach (Cliente cliente in clientes)
+                @foreach (Producto producto in productos)
                 {
-                    <tr colspan="4">
-                        <td class="cabecera-lista-tr-td">@cliente.cli_nombre</td>
-                        <td class="cabecera-lista-tr-td">@cliente.cli_cedula</td>
-                        <td class="cabecera-lista-tr-td">@cliente.cli_correo</td>
+                    <tr colspan="5">
+                        <td class="cabecera-lista-tr-td">@producto.pro_codigo</td>
+                        <td class="cabecera-lista-tr-td">@producto.pro_nombre</td>
+                        <td class="cabecera-lista-tr-td">@producto.pro_valor_unitario</td>
+                        <td class="cabecera-lista-tr-td">@producto.pro_cantidad</td>
                         <td class="cabecera-lista-tr-td">
-                            <a href="/clienteslista" @onclick="() => AbrirModal(cliente)">
+                            <a href="/productoslista" @onclick="() => AbrirModal(producto)">
                                 <i id="tag-crud">Borrar</i>
                             </a>
-                            <a href="/clientesguardar/@cliente.Id"><i id="tag-crud">Editar</i></a>
-                            <a href="/clienteslista"><i id="tag-crud">Detalles</i></a>
+                            <a href="/productosguardar/@producto.Id"><i id="tag-crud">Editar</i></a>
+                            <a href="/productoslista"><i id="tag-crud">Detalles</i></a>
                         </td>
                     </tr>
                 }
@@ -66,47 +68,42 @@ else{
 @if(MostrarModal)
 {
     <ModalConfirmacion  Titulo="¿Está seguro?" 
-                        Texto="Se dispone a eliminar un Cliente de la base de datos..."
+                        Texto="Se dispone a eliminar un producto de la base de datos..."
                         OnClose="@CerrarModal">
 
     </ModalConfirmacion> 
 }
 
 @code {
-    private IEnumerable<Cliente> clientes;
+    private IEnumerable<Producto> productos;
 
-    private Cliente _clienteAborrar;
+    private Producto _productoAborrar;
     public bool MostrarModal { get; set; }
     private async Task CerrarModal(bool aceptado)
     {
         if (aceptado)
         {
             @* Navegador.NavigateTo("/"); *@
-            Navegador.NavigateTo("/clienteslista",true);
-            await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
+            Navegador.NavigateTo("/productoslista",true);
+            await ServicioProducto .EliminarProducto(_productoAborrar.Id);
         }
 
         MostrarModal = false;
         StateHasChanged();
     }
 
-    private void AbrirModal(Cliente clienteAborrar)
+    private void AbrirModal(Producto productoAborrar)
     {
-        _clienteAborrar = clienteAborrar;
+        _productoAborrar = productoAborrar;
         MostrarModal = true;
         StateHasChanged();
     }
-
-    @* protected async Task BorrarCliente()
-    {
-        await ServicioCliente.EliminarCliente(_clienteAborrar.Id);
-    } *@
 
     protected override async Task OnInitializedAsync()
     {
         try
         {
-            clientes= await ServicioCliente.GetListaClientes();
+            productos = await ServicioProducto.GetListaProductos();
         }
         catch (System.Exception ex)
         {

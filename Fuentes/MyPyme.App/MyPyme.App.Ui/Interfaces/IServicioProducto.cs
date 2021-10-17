@@ -5,14 +5,13 @@ using System.Collections.Generic;
 
 using MyPyme.App.Model.Clases;
 
-namespace MyPyme.App.Database.Repositorios
+namespace MyPyme.App.Ui.Interfaces
 {
-    public interface IRepositorioProductos
+    public interface IServicioProducto
     {
         Task<IEnumerable<Producto>> GetListaProductos();
         Task<Producto> GetProducto(int Id);
-        Task<bool> GuardarProducto(Producto pproducto);
-        Task<bool> ModificarProducto(Producto producto);
+        Task<bool> GuardarProducto(Producto producto);
         Task<bool> EliminarProducto(int Id);
     }
 }
